@@ -1,9 +1,10 @@
-
-## 1. Numbers
-## 2. BigInt
-## 3. Number Methods
-## 4. Number Properties
-
+## Topic
+```
+1. Numbers
+2. BigInt
+3. Number Methods
+4. Number Properties
+```
 Certainly! Here's information about numbers, BigInt, number methods, and number properties in JavaScript:
 
 **1. Numbers:**
