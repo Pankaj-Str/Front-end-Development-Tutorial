@@ -1,8 +1,6 @@
 # Java Script
 
 1.	Variables
-2.	Let
-3.	Const
 4.	Operators
 7.	Data Types
 8.	Functions
