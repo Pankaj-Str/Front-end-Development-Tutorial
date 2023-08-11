@@ -105,4 +105,109 @@ class Person {
 let person = new Person("John", "Doe");
 ```
 
-Objects in JavaScript are incredibly versatile, and they form the foundation for many programming concepts and techniques. Understanding objects is crucial for building complex applications and working with data in a structured manner.
+
+
+## Examples of working with objects in JavaScript:
+
+**1. Simple Object:**
+
+```javascript
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    isStudent: false
+};
+
+console.log(person.firstName); // Output: John
+console.log(person.age);       // Output: 30
+
+person.city = "New York";
+console.log(person.city);      // Output: New York
+```
+
+**2. Nested Objects:**
+
+```javascript
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        country: "USA"
+    }
+};
+
+console.log(person.address.city); // Output: Anytown
+```
+
+**3. Object Methods:**
+
+```javascript
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(person.fullName()); // Output: John Doe
+```
+
+**4. Constructor Function:**
+
+```javascript
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+
+let person = new Person("John", "Doe");
+console.log(person.firstName); // Output: John
+```
+
+**5. ES6 Class:**
+
+```javascript
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    fullName() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+let person = new Person("John", "Doe");
+console.log(person.fullName()); // Output: John Doe
+```
+
+**6. Using Object Methods to Manipulate Data:**
+
+```javascript
+let bankAccount = {
+    balance: 1000,
+    deposit: function(amount) {
+        this.balance += amount;
+        return "Deposited " + amount + " units. New balance: " + this.balance;
+    },
+    withdraw: function(amount) {
+        if (amount <= this.balance) {
+            this.balance -= amount;
+            return "Withdrawn " + amount + " units. New balance: " + this.balance;
+        } else {
+            return "Insufficient balance.";
+        }
+    }
+};
+
+console.log(bankAccount.deposit(500));  // Output: Deposited 500 units. New balance: 1500
+console.log(bankAccount.withdraw(300)); // Output: Withdrawn 300 units. New balance: 1200
+console.log(bankAccount.withdraw(1500)); // Output: Insufficient balance.
+```
+
+These examples demonstrate different aspects of working with objects in JavaScript, from simple properties and nested objects to object methods and constructors. Objects are a powerful way to organize and manipulate data in your JavaScript programs.
