@@ -69,3 +69,38 @@ ALTER TABLE clientinfo ADD address varchar(100);
 -- delete col - from table 
 ALTER TABLE clientinfo DROP COLUMN address;
 
+-- date 29 - 08 - 2023
+
+-- where
+-- switch database 
+use classicmodels;
+
+select * from customers;
+select customername,phone,city,creditlimit
+from customers
+where creditlimit < 5000;
+
+-- example 2
+select customername,phone,city,creditlimit,creditlimit+5000 as new_creditlimit 
+from customers
+where creditlimit < 50000;
+
+-- and 
+select customername,phone,city,country,creditlimit 
+from customers
+where creditlimit < 70000 and country = 'USA';
+-- or
+select customername,phone,city,country,creditlimit 
+from customers
+where creditlimit < 70000 or country = 'USA';
+
+
+select * from payments;
+
+select * from payments
+where customernumber = 121;
+
+
+
+
+
