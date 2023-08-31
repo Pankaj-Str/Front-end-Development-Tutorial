@@ -12,45 +12,33 @@ In modern JavaScript, you can also use `let` and `const` to declare variables. T
 
 1. `var`: Variables declared with `var` are function-scoped or globally-scoped. This means they are accessible within the function where they are defined or globally if defined outside of any function.
 
+```js
+// Declaring multiple Variables
+var name = "Peter Parker", age = 21, isMarried = false;
+
+/* Longer declarations can be written to span
+multiple lines to improve the readability */
+var name = "Peter Parker",
+age = 21,
+isMarried = false;
+```
+
 2. `let`: Variables declared with `let` are block-scoped. They are accessible only within the block (portion of code within curly braces) where they are defined.
+
+```js
+// Declaring variables
+let name = "Harry Potter";
+let age = 11;
+let isStudent = true;
+```
 
 3. `const`: Variables declared with `const` are also block-scoped, but they cannot be reassigned after their initial assignment. However, it's important to note that while a `const` variable cannot be reassigned, the value it holds might still be mutable if it's an object or an array.
 
-Here's how you can assign values to variables:
+```js
+// Declaring constant
+const PI = 3.14;
+console.log(PI); // 3.14
 
-```javascript
-var name = "John"; // String
-let age = 30;      // Number
-const PI = 3.1416; // Constant
+// Trying to reassign
+PI = 10; // error
 ```
-
-And you can later change the values of `name` and `age`:
-
-```javascript
-name = "Jane";
-age = 25;
-```
-
-Remember that JavaScript is a dynamically typed language, which means you don't need to explicitly declare the data type of a variable. The interpreter figures out the data type based on the assigned value.
-
-You can also declare and assign a value to a variable in a single line:
-
-```javascript
-let greeting = "Hello, World!";
-```
-
-It's good practice to give variables meaningful names that indicate their purpose. This makes your code more readable and maintainable. Additionally, JavaScript variable names are case-sensitive.
-
-Here's a simple example that demonstrates these concepts:
-
-```javascript
-function greet() {
-    var message = "Hello from inside the function!";
-    console.log(message);
-}
-
-var message = "Hello from outside the function!";
-greet();
-console.log(message);
-```
-
