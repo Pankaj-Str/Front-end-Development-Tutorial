@@ -100,6 +100,87 @@ select * from payments;
 select * from payments
 where customernumber = 121;
 
+-- date 2 - 9 - 2023
+
+use classicmodels;
+
+select * from payments;
+
+select customernumber,paymentdate,amount 
+from payments
+where amount < 10000;
+
+select customernumber,paymentdate,amount, amount+500 as update_amount 
+from payments
+where amount < 10000;
+
+select customernumber,paymentdate,amount, amount+500 as update_amount 
+from payments
+where amount < 10000;
+
+# count() function
+
+select count(amount)
+from payments
+where amount < 10000;
+
+# sum() function
+
+select sum(amount)
+from payments
+where amount < 10000;
+
+select sum(amount+500) as totalsum
+from payments
+where amount < 10000;
+
+-- group by
+select customernumber 
+from payments
+group by customernumber;
+
+select customernumber, count(customernumber) as totalcustomers
+from payments
+group by customernumber;
+
+select*from payments;
+
+select customernumber,sum(amount)
+from payments
+where customernumber = 121;
+
+-- like (search)
+
+select * from customers;
+
+select * from customers
+where customername like 'p%'; 
+
+select * from customers
+where customername like '%z%'; 
+
+select * from customers
+where customername like '%k';
+
+select * from customers
+where customername like 'ca%';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
