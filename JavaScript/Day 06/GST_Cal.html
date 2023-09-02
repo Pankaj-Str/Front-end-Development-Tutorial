@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+
+        function tax(){
+
+            let price,gst;
+
+            price1 = document.getElementById("price").value;
+            gst1 = document.getElementById("gst").value;
+
+            price = parseInt(price1);
+            gst = parseInt(gst1);
+
+            let gstamount =  price*gst/100;
+            let finalprice = gstamount+price;
+
+            document.getElementById("gst1").innerHTML = gst;
+            document.getElementById("gstamount").innerHTML = gstamount;
+            document.getElementById("mrp").innerHTML = price;
+            document.getElementById("mrpwithgst").innerHTML = finalprice;
+
+            
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label class="form-label">Price</label>
+                    <input type="text" class="form-control" id="price" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Select GST</label>
+                    <select class="form-control" id="gst">
+                        <option value="9">9%</option>
+                        <option value="18">18%</option>
+                        <option value="23">23%</option>
+                        <option value="2">2%</option>
+                        <option value="8">8%</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-danger" onclick="tax()">Get Result</button>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                      Your Result
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">GST %  : <span id="gst1"> </span> </h5>
+                      <h5 class="card-title">GST Amount : <span id="gstamount"> </span> </h5>
+                      <h5 class="card-title">Price : <span id="mrp"> </span> </h5>
+                      <h5 class="card-title">Price with GST :<span id="mrpwithgst"> </span> </h5>
+
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    span{
+        color: brown;
+        text-decoration: solid;
+    }
+    </style>
