@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Set Content and Attributes @codeswithpankaj</title>
+  <!-- Include jQuery library from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Set Content and Attributes Example</h1>
+
+  <!-- Example HTML elements where content and attributes will be set -->
+  <div id="content-div">
+    <p>This is a placeholder.</p>
+  </div>
+  <a id="link" href="#">Click Here</a>
+
+  <!-- Buttons to trigger content and attribute setting -->
+  <button id="set-content-button">Set Content</button>
+  <button id="set-attribute-button">Set Link Href Attribute</button>
+
+  <!-- Embed jQuery code directly in the HTML file -->
+  <script>
+    $(document).ready(function() {
+      // Click event to set content
+      $("#set-content-button").click(function() {
+        // Set new content for the div with ID "content-div"
+        $("#content-div").html("<p>New content has been set.</p>");
+      });
+
+      // Click event to set link href attribute
+      $("#set-attribute-button").click(function() {
+        // Set a new href attribute for the link with ID "link"
+        $("#link").attr("href", "https://codeswithpankaj.com");
+      });
+    });
+  </script>
+</body>
+</html>

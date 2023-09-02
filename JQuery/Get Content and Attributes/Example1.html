@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Get Content and Attributes @codeswithpankaj</title>
+  <!-- Include jQuery library from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Get Content and Attributes Example</h1>
+
+  <!-- Example HTML elements with content and attributes -->
+  <p id="paragraph" class="important">This is a paragraph.</p>
+  <a id="link" href="https://codeswithpankaj.com">Visit @codeswithpankaj.com</a>
+  <img id="image" src="img/logo.jpg" alt="Example Image" width="200" height="150">
+
+  <!-- Buttons to trigger content and attribute retrieval -->
+  <button id="get-content-button">Get Paragraph Content</button>
+  <button id="get-attribute-button">Get Link Href Attribute</button>
+
+  <!-- Display areas for retrieved content and attributes -->
+  <div>
+    <p>Retrieved Content:</p>
+    <div id="content-result"></div>
+  </div>
+  <div>
+    <p>Retrieved Attribute:</p>
+    <div id="attribute-result"></div>
+  </div>
+
+  <!-- Embed jQuery code directly in the HTML file -->
+  <script>
+    $(document).ready(function() {
+      // Click event to get paragraph content
+      $("#get-content-button").click(function() {
+        // Get the content of the paragraph with ID "paragraph"
+        var paragraphContent = $("#paragraph").text();
+        
+        // Display the retrieved content
+        $("#content-result").text(paragraphContent);
+      });
+
+      // Click event to get link href attribute
+      $("#get-attribute-button").click(function() {
+        // Get the href attribute of the link with ID "link"
+        var linkHref = $("#link").attr("href");
+        
+        // Display the retrieved attribute
+        $("#attribute-result").text(linkHref);
+      });
+    });
+  </script>
+</body>
+</html>

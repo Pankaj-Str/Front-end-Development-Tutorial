@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Sliding Example (Single File)</title>
+  <!-- Include jQuery library from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Add some basic styles for the sliding element */
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      overflow: hidden; /* Hide content that overflows the box */
+    }
+    #content {
+      width: 100%;
+      height: 100%;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sliding Example</h1>
+  <button id="slide-down">Slide Down</button>
+  <button id="slide-up">Slide Up</button>
+  <button id="slide-toggle">Slide Toggle</button>
+  <div id="box">
+    <div id="content"></div>
+  </div>
+
+  <!-- Embed jQuery code directly in the HTML file -->
+  <script>
+    $(document).ready(function() {
+      // Function to slide down the element with ID "box"
+      $("#slide-down").click(function() {
+        $("#box").slideDown();
+      });
+
+      // Function to slide up the element with ID "box"
+      $("#slide-up").click(function() {
+        $("#box").slideUp();
+      });
+
+      // Function to toggle sliding of the element with ID "box"
+      $("#slide-toggle").click(function() {
+        $("#box").slideToggle();
+      });
+    });
+  </script>
+</body>
+</html>

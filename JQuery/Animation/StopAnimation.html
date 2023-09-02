@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Stop Animations @ codewithpankaj.com</title>
+  <!-- Include jQuery library from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Add some basic styles for the animated element */
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stop Animations Example @p4n.in</h1>
+  <button id="start-button">Start Animation</button>
+  <button id="stop-button">Stop Animation</button>
+  <div id="box"></div>
+
+  <!-- Embed jQuery code directly in the HTML file -->
+  <script>
+    $(document).ready(function() {
+      // Variable to store the animation interval
+      var animationInterval;
+
+      // Function to start the animation
+      function startAnimation() {
+        // Clear any previous animation interval
+        clearInterval(animationInterval);
+
+        // Animate the "box" element's left position
+        animationInterval = setInterval(function() {
+          $("#box").animate({
+            left: "+=50px"
+          }, 500);
+        }, 1000);
+      }
+
+      // Function to stop the animation
+      function stopAnimation() {
+        clearInterval(animationInterval);
+      }
+
+      // Start the animation when the "Start Animation" button is clicked
+      $("#start-button").click(function() {
+        startAnimation();
+      });
+
+      // Stop the animation when the "Stop Animation" button is clicked
+      $("#stop-button").click(function() {
+        stopAnimation();
+      });
+    });
+  </script>
+</body>
+</html>
