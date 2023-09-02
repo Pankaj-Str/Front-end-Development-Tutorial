@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+    
+    $(document).ready(function(){
+
+        $("#fadeIn").click(function(){
+            $("#boxx").fadeIn();
+        });
+        $("#fadeInslow").click(function(){
+            $("#boxx").fadeIn('slow');
+        });
+        $("#fadeInTime").click(function(){
+            $("#boxx").fadeIn(2000);
+        });
+
+        // fade out code 
+
+        $("#fadeOut").click(function(){
+            $("#boxx").fadeOut();
+        });
+        $("#fadeOutSlow").click(function(){
+            $("#boxx").fadeOut('slow');
+        });
+        $("#fadeOutTime").click(function(){
+            $("#boxx").fadeOut(2000);
+        });
+
+        
+ 
+    });
+    
+    </script>
+
+</head>
+<body>
+    
+   <ul>
+    <li>fadeIn()</li>
+    <ul>
+        <li><button id="fadeIn">fadeIn()</button></li>
+        <li><button id="fadeInslow">fadeIn("slow")</button></li>
+        <li><button id="fadeInTime">fadeIn(1000)</button></li>
+    </ul>
+    <li>fadeOut()</li>
+    <ul>
+        <li><button id="fadeOut">fadeOut()</button></li>
+        <li><button id="fadeOutSlow">fadeOut("slow")</button></li>
+        <li><button id="fadeOutTime">fadeOut(1000)</button></li>
+    </ul>
+    <li>fadeToggle()</li>
+    <li>fadeTo()</li>
+   </ul>
+
+    <div class="box" id="boxx">
+        <p>
+            A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately. As of jQuery 1.7, the queue option can also accept a string, in which case the animation is added to the queue represented by that string. When a custom queue name is used the animation does not automatically start; you must call .dequeue("queuename") to start it.
+        </p>
+    </div>
+</body>
+</html>
+
+<style>
+    .box{
+        width: 25%;
+        height: auto;
+        border: solid 1px black;
+        background-color: antiquewhite;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
