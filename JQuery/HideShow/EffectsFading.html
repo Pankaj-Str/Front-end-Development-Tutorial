@@ -31,8 +31,15 @@
         $("#fadeOutTime").click(function(){
             $("#boxx").fadeOut(2000);
         });
+        $("#fadeToggle").click(function(){
+            $("#boxx").fadeToggle();
+        });
 
+        $("#fadeTo").click(function(){
+            $("#boxx").fadeTo(1000, 0.4);
+        });
         
+
  
     });
     
@@ -54,8 +61,8 @@
         <li><button id="fadeOutSlow">fadeOut("slow")</button></li>
         <li><button id="fadeOutTime">fadeOut(1000)</button></li>
     </ul>
-    <li>fadeToggle()</li>
-    <li>fadeTo()</li>
+    <li><button id="fadeToggle">fadeToggle()</button></li>
+    <li><button id="fadeTo">fadeTo()</button></li>
    </ul>
 
     <div class="box" id="boxx">
