@@ -41,12 +41,12 @@
           animationInterval = setInterval(function() {
             var currentPosition = parseInt($("#circle").css("left"), 10);
             if (currentPosition < $(window).width() - 50) {
-              $("#circle").css('left', '+=10px');
+              $("#circle").css('left', '+=100px');
             } else {
               // Reset the animation when the circle reaches the end
               $("#circle").css('left', '0');
             }
-          }, 100);
+          }, 1000);
         }
       }
 
