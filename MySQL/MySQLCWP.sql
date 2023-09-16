@@ -168,6 +168,59 @@ where customername like 'ca%';
 
 
 
+-- Date : 16 Sep 2023
+-- Select Database 
+use classicmodels;
+
+-- group by 
+-- order by -- ASC|DESC
+
+select * from customers;
+
+select country , count(country) as total_customers
+from customers
+group by country;
+
+ select customername,creditlimit,country
+ from customers
+ where country = "USA";
+
+select sum(creditlimit)
+from customers
+where country="USA";
+
+
+-- order by -- ASC|DESC
+select * from customers
+order by customername ASC;
+
+select * from customers
+order by customername DESC;
+
+select customername,creditlimit from customers
+order by creditlimit DESC;
+
+select customername,creditlimit from customers
+order by creditlimit ASC;
+
+-- distinct Key word
+
+select distinct country
+from customers;
+
+-- having 
+
+-- SELECT COUNT(CustomerID), Country
+-- FROM Customers
+-- GROUP BY Country
+-- HAVING COUNT(CustomerID) > 5;
+
+select * from customers;
+
+select count(creditlimit),city
+from customers
+group by city
+having count(creditlimit) < 10000;
 
 
 
