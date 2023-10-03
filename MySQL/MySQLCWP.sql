@@ -223,6 +223,53 @@ group by city
 having count(creditlimit) < 10000;
 
 
+-- join Date : 23 - 9 - 2023
+
+use classicmodels; 
+
+ 
+select * from payments;
+
+-- SELECT customers.name, orders.amount
+-- FROM customers
+-- INNER JOIN orders ON customers.id = orders.customer_id;
+
+select customers.customernumber, payments.checknumber , payments.amount,
+customers.customername, customers.phone , customers.country, customers.city
+from payments
+inner join  customers
+on customers.customernumber = payments.customernumber;
+
+
+select customers.customernumber, payments.checknumber , payments.amount,
+customers.customername, customers.phone , customers.country, customers.city
+from customers
+left join  payments
+on customers.customernumber = payments.customernumber;
+
+select customers.customernumber, payments.checknumber , payments.amount,
+customers.customername, customers.phone , customers.country, customers.city
+from customers
+right join  payments
+on customers.customernumber = payments.customernumber;
+
+select * from employees;
+select * from offices;
+
+select employees.firstName,employees.jobtitle,
+offices.country
+from employees
+inner join offices
+on employees.officecode=offices.officecode;
+
+select * from customers;
+select * from orders;
+
+select customers.customername, customers.phone,
+orders.orderNumber, orders.orderdate
+from orders
+right join customers
+on customers.customernumber = orders.customernumber;
 
 
 
