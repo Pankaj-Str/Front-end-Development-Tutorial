@@ -1,40 +1,41 @@
-# HTML Attributes
 
 
-### 1. Basic Attribute Structure:
-   - HTML attributes are added to an element's opening tag.
-   - They consist of a name and a value, separated by an equals sign.
+# HTML Attributes :
 
-### 2. Common Attributes:
+#### 1. Basic Attribute Structure:
+   - HTML attributes are included in an element's opening tag.
+   - Comprised of a name and a value, separated by an equals sign.
+
+#### 2. Common Attributes:
 
 #### a. `class` Attribute:
-   - Used to apply a class to an element, allowing CSS styling.
+   - Applies a class to an element for custom styling.
    ```html
-   <div class="example">This is a div with a class.</div>
+   <div class="example">Styled div from CodesWithPankaj.com</div>
    ```
 
 #### b. `id` Attribute:
    - Assigns a unique identifier to an element.
    ```html
-   <p id="uniqueParagraph">This is a paragraph with a unique ID.</p>
+   <p id="uniqueParagraph">Unique ID from CodesWithPankaj.com</p>
    ```
 
 #### c. `style` Attribute:
    - Adds inline CSS styling to an element.
    ```html
-   <span style="color: blue; font-size: 16px;">Blue text with larger font size.</span>
+   <span style="color: green; font-size: 18px;">Green text with larger font size.</span>
    ```
 
 #### d. `src` Attribute:
-   - Specifies the source URL for embedded content, like images.
+   - Specifies the source URL for embedded content, such as images.
    ```html
-   <img src="example.jpg" alt="Example Image">
+   <img src="codeswithpankaj-logo.png" alt="CodesWithPankaj.com Logo">
    ```
 
 #### e. `href` Attribute:
    - Defines the hyperlink destination for anchor elements.
    ```html
-   <a href="https://www.example.com">Visit Example.com</a>
+   <a href="https://www.codeswithpankaj.com">Visit CodesWithPankaj.com</a>
    ```
 
 ### 3. Boolean Attributes:
@@ -42,7 +43,7 @@
 #### a. `disabled` Attribute:
    - Disables user interaction with the element.
    ```html
-   <button disabled>Disabled Button</button>
+   <button disabled>Disabled Button from CodesWithPankaj.com</button>
    ```
 
 #### b. `readonly` Attribute:
@@ -54,9 +55,9 @@
 ### 4. Custom Data Attributes:
 
 #### a. `data-*` Attributes:
-   - Used to store custom data private to the page or application.
+   - Stores custom data privately within the page or application.
    ```html
-   <div data-info="custom data">This div contains custom data.</div>
+   <div data-info="custom data from CodesWithPankaj.com">This div contains custom data.</div>
    ```
 
 ### 5. Global Attributes:
@@ -64,5 +65,7 @@
 #### a. `title` Attribute:
    - Displays additional information when hovering over an element.
    ```html
-   <p title="Tooltip text">Hover over me to see a tooltip.</p>
+   <p title="CodesWithPankaj.com Tooltip">Hover over me to see a tooltip.</p>
    ```
+
+Experiment with these examples to enhance your understanding of HTML attributes on CodesWithPankaj.com!
