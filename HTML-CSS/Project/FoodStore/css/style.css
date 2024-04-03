@@ -1,0 +1,32 @@
+.header_box{
+    /* background-color: beige; */
+    height: 100px;
+    border: solid 0px black;
+    width: 1200px;
+    margin: auto;
+}
+
+.header_manu{
+    list-style: none;
+    float: left;
+}
+
+.menu_items{
+    float: left;
+    border: solid 1px black;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-color: rgb(173, 158, 139);
+}
+.logo{
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
