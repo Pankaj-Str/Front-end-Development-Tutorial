@@ -1,35 +1,34 @@
 .outer_box{
-    width: 578px;
-    height: 576px;
-    background-color: red;
-    border: solid 5px black;
+    height: 573px;
+    width: 574px;
+    border: solid 4px black;
     margin: auto;
 }
 .row_box{
-    width: 576px;
     height: 70px;
-    background-color: rgb(255, 166, 0);
+    width: 573px;
     border: solid 1px black;
+    background-color: aqua;
 }
+
 .black_box{
-    width: 70px;
     height: 70px;
-    background-color: black;
-    border: solid 1px black;
+    width: 70px;
+    border: solid 1px  rgb(91, 91, 91);
+    background-color: rgb(91, 91, 91);
     float: left;
-    color: white;
+    /* color: white; */
     text-align: center;
     font-size: 50px;
-    
+
 }
 .white_box{
-    width: 70px;
     height: 70px;
+    width: 70px;
+    border: solid 1px  rgb(91, 91, 91);
     background-color: white;
-    border: solid 1px black;
     float: left;
-    color: black;
+    /* color: black; */
     text-align: center;
     font-size: 50px;
-    
 }
