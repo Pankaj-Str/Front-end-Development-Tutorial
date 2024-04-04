@@ -4,6 +4,7 @@
     border: solid 0px black;
     width: 1200px;
     margin: auto;
+    background-color: rgb(245, 245, 155);
 }
 
 .header_manu{
@@ -37,6 +38,7 @@
     height: 350px;
     margin: auto;
     border: solid 0px black;
+    background-color: rgb(245, 245, 155);
 }
 .center_section_left{
     width: 295px;
