@@ -2,17 +2,18 @@ body{
     background-image: url(../img/samosa-bg1.png);
 }
 
-
 header{
     height: 70px;
     width: 1200px;
     border: 1px solid rgb(255, 255, 255);
     margin: auto;
 }
+
 .menu_list{
     list-style: none;
    
 }
+s
 .menu_item{
     float: left;
     border: solid 1px rgb(255, 128, 0);
