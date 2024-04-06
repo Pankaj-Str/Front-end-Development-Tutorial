@@ -77,8 +77,8 @@ header{
 .product_container{
     width: 1370px;
     margin: auto;
-    height: auto;
-    border: solid 1px rgb(104, 43, 43);
+    height: 1150px;
+    border: solid 0px rgb(104, 43, 43);
     margin-top: 50px;
     margin-bottom: 50px;
 }
