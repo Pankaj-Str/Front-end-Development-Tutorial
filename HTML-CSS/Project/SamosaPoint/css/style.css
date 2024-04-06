@@ -36,7 +36,7 @@ header{
 .container{
     width: 1200px;
     margin: auto;
-    height: 300px;
+    height: 270px;
     border: solid 0px rgb(104, 43, 43);
 
 }
@@ -84,7 +84,7 @@ header{
     margin: auto;
     height: 1150px;
     border: solid 0px rgb(104, 43, 43);
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 .center_heading{
@@ -96,7 +96,7 @@ header{
 .product{
     width: 300px;
     float: left;
-    margin: 10px;
+    margin: 5px;
     border: solid 1px rgb(255, 128, 0);
     border-radius: 20px;
     padding: 10px;
