@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #animated-list li {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.5s forwards;
+}
+
+#animated-list li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+#animated-list li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+#animated-list li:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+#animated-list li:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+#animated-list li:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+@keyframes slideIn {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+    </style>
+</head>
+<body>
+    <ul id="animated-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+</body>
+</html>
