@@ -21,6 +21,7 @@ header{
     border-radius: 20px;
     background-color: rgb(236, 186, 121);
     color: black;
+    cursor: pointer;
 }
 .logo{
     float: left;
