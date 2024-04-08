@@ -210,3 +210,81 @@ footer{
     cursor: pointer;
 }
 
+/* Contact page css */
+
+.contact_section{
+    padding: 50px;
+    width: 1200px;
+    height: 850px;
+    margin: auto;
+    border: solid 1px black;
+    /* background-color: rgb(245, 245, 155); */
+}
+
+.info_section{
+    width: 400px;
+    height: 500px;
+    float: left;
+    border: solid 1px black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form_section{
+    width: 600px;
+    height: 500px;
+    float: right;
+    border: solid 1px black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+input{
+    width: 400px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+}
+.btn_submit{
+    width: 420px;
+    height: 40px;
+    background-color: rgb(248, 3, 3);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px rgb(248, 3, 3);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
