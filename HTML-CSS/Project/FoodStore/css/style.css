@@ -213,11 +213,11 @@ footer{
 /* Contact page css */
 
 .contact_section{
-    padding: 50px;
+    padding: 20px;
     width: 1200px;
-    height: 850px;
+    height: 520px;
     margin: auto;
-    border: solid 1px black;
+    border: solid 0px black;
     /* background-color: rgb(245, 245, 155); */
 }
 
@@ -225,7 +225,7 @@ footer{
     width: 400px;
     height: 500px;
     float: left;
-    border: solid 1px black;
+    border: solid 0px black;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
@@ -238,7 +238,7 @@ footer{
     width: 600px;
     height: 500px;
     float: right;
-    border: solid 1px black;
+    border: solid 0px black;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
