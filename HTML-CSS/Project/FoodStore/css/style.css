@@ -288,3 +288,91 @@ textarea{
     margin-left: 10px;
     cursor: pointer;
 }
+
+
+/* type of food page  */
+
+.type_section{
+    padding: 50px;
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    border: solid 0px black;
+    /* background-color: rgb(245, 245, 155); */
+}
+.video_section{
+    width: 700px;
+    height: 460px;
+    float: left;
+    border: solid 1px black;
+    margin: 10px;
+    background-color: rgb(245, 245, 155);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 20px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video_menu{
+    width: 372px;
+    height: 480px;
+    float: left;
+    border: solid 1px black;
+    margin: 10px;
+    background-color: rgb(245, 245, 155);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+.menu_box{
+    width: 360px;
+    height: 110px;
+    border: solid 1px black;
+    border-radius:10px;
+    margin: 5px;
+    background-color: rgb(240, 231, 215);
+    
+}
+.menu_img{
+    width: 85px;
+    height: 85px;
+    border: solid 1px black;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+.menu_h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
+.menu_p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: left;
+    margin-top: -14px;
+}
+.menu_button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(248, 3, 3);
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px rgb(248, 3, 3);
+    border-radius: 5px;
+    margin-top: -24px;
+    margin-left: 0px;
+    cursor: pointer;
+}
