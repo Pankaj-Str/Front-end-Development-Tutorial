@@ -29,27 +29,68 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 shadow-lg m-1">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">About us</a>
                     </li>
                     <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 shadow-lg m-1">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Contact us</a>
                     </li>
                     <li class="nav-item border border-2 border-secondary rounded-pill bg-white text-center ps-3 pe-3 shadow-lg m-1">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Shop</a>
                     </li>
 
                 </ul>
                
             </div>
             <ul class="navbar-nav text-center">
-                <li class="nav-item text-white fs-1">
+                <li class="nav-item text-white fs-1 " data-bs-toggle="modal" data-bs-target="#login">
                     <i class="bi bi-box-arrow-in-right"></i>
                 </li>
             </ul>
         </div>
     </nav>
 
+
+
     <!-- end nav bar section  -->
+
+
+    <!-- create a modal for login and signup -->
+
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header bg-secondary">
+              <h4 class="modal-title text-white">Login</h4>
+              <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal Body -->
+            <div class="modal-body">
+
+                <form>
+                    <div class="m-2">
+                        <label for="email" class="form-label text-dark">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="m-2">
+                        <label for="password" class="form-label text-dark">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                </form>
+
+
+            </div>
+            <!-- Model Footer-->
+            <div class="modal-footer bg-secondary">
+                <button type="button" class="btn btn-dark">Login</button>
+            </div>
+    </div>
+    </div>
+    </div>
+
+
 
     <!-- start center section  -->
 
@@ -159,6 +200,48 @@
             </div>
 
     <!-- end product section  -->
+
+
+ <!-- create footer  -->
+
+
+ <footer class="container-fluid">
+    
+    <div class="row mt-3">
+        <div class="col-sm-4">
+            <ul class="list-group list-group-numbered list-group-flush">
+            
+                <li class="list-group-item bg-black border border-1 border-warning text-white rounded-pill m-2">Samosa</li>
+                <li class="list-group-item bg-black border border-1 border-warning text-white rounded-pill m-2">Mushrooms</li>
+                <li class="list-group-item bg-black border border-1 border-warning text-white rounded-pill m-2">Jalebi</li>
+                <li class="list-group-item bg-black border border-1 border-warning text-white rounded-pill m-2">fafda</li>
+               
+              </ul>
+        </div>
+        
+        <div class="col-sm-4">
+            <!-- create a map into footer -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30136.954360658296!2d72.8419358!3d19.233631999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b12254e0ba55%3A0x1851d37db7fed10d!2sESKAY%20RESORTS!5e0!3m2!1sen!2sin!4v1713150407548!5m2!1sen!2sin" width="400" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-white">Follow us</h1>
+            <!-- create social media icons -->
+            <i class="bi bi-facebook fs-2 text-white m-2"></i>
+            <i class="bi bi-instagram fs-2 text-white m-2"></i>
+            <i class="bi bi-twitter fs-2 text-white m-2" ></i>
+            <i class="bi bi-youtube fs-2 text-white m-2"></i>
+
+            <!-- address  -->
+            <h1 class="fs-3 text-warning">Address : </h1>
+            <p class="text-white">Address: 123, xyz street, abc city, 123456</p>
+            <p class="text-white">Phone: 1234567890</p>
+            <p class="text-white">Email: info@p4n.in </p>
+
+        </div>
+    </div>
+
+ </footer>
+
     
 </body>
 </html>
