@@ -1,0 +1,14 @@
+.header{
+    width: 1200px;
+    height: 100px;
+    background-color: cadetblue;
+    border: solid 1px;
+    margin: auto;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.menu_outer{
+    list-style: none;
+}
