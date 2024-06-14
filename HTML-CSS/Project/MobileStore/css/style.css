@@ -85,3 +85,35 @@
     padding: 10px 20px;
     margin-left: 30px;
 }
+
+/*product card section*/
+
+.prodcut_section{
+    height: 400px;
+    width: 1200px;
+    background-color: #f2f2f2;
+    border: solid 0px black;
+    margin: auto    ;
+}
+.card{
+    height: 330px;
+    width: 240px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+}
+
+/*https://getcssscan.com/css-box-shadow-examples*/
+
+.buy_now1{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+p{
+    font-family: Arial;
+}
