@@ -1,8 +1,0 @@
-
-        .darken-image {
-           filter: brightness(60%);
-        }
-        .center_text{
-            top: 50%;
-            transform: translateY(-50%);
-        }
