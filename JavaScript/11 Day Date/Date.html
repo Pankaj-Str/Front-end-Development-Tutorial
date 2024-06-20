@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function print(){
+           // Current date and time
+            let currentDate = new Date();
+            let year = currentDate.getFullYear();
+            let month = currentDate.getMonth(); // 0-based (0 = January)
+            let day = currentDate.getDate();
+            let hours = currentDate.getHours();
+            let minutes = currentDate.getMinutes();
+            let seconds = currentDate.getSeconds();
+            let milliseconds = currentDate.getMilliseconds();
+            document.getElementById("year").innerHTML = year;
+            document.getElementById("month").innerHTML = month;
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+            document.getElementById("milliseconds").innerHTML = milliseconds;
+
+                let formattedDate = currentDate.toDateString();
+                let formattedTime = currentDate.toTimeString();
+                let formattedDateTime = currentDate.toLocaleString();
+                document.getElementById("formattedDate").innerHTML = formattedDate;
+                document.getElementById("formattedTime").innerHTML = formattedTime;
+                document.getElementById("formattedDateTime").innerHTML = formattedDateTime;
+}
+    </script>
+
+</head>
+<body>
+    <button onclick="print()">Print</button>
+<ul>
+    <li>Dates</li>
+    <li>Date Formats</li>
+    <li>Date Get Methods</li>
+    <li>Date Set Methods</li>
+</ul>    
+   <ol>
+    <li> Current year <span id="year"></span> </li>
+    <li> Current month <span id="month"></span> </li>
+    <li> Current day <span id="day"></span> </li>
+    <li> Current hours <span id="hours"></span> </li>
+    <li> Current minutes <span id="minutes"></span> </li>
+    <li> Current seconds <span id="seconds"></span> </li>
+    <li> Current milliseconds <span id="milliseconds"></span> </li>
+   </ol>
+
+   <p> Formatting Dates:</p>
+   <li> formatted Date <span id="formattedDate"></span> </li>
+   <li> formatted Time <span id="formattedTime"></span> </li>
+   <li> formatted Date Time <span id="formattedDateTime"></span> </li>
+</body>
+</html>
+<style>
+    span{
+        color: red;
+        font-weight: bold;
+    }
+</style>

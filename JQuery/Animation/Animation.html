@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Animation @codewithpankaj.com</title>
+  <!-- Include jQuery library from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Add some basic styles for the animated element */
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation with Callback Example</h1>
+  <button id="animate-button">Animate</button>
+  <div id="box"></div>
+
+  <!-- Embed jQuery code directly in the HTML file -->
+  <script>
+    $(document).ready(function() {
+      // Function to animate the element with ID "box"
+      $("#animate-button").click(function() {
+        // Animate the "box" element's left position to 200px over 1000 milliseconds
+        $("#box").animate({
+           left: "200px"
+        }, 1000, function() {
+          // Callback function to execute when the animation is complete
+          alert("Animation complete!");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

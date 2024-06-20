@@ -1,0 +1,280 @@
+:root {
+    --primary: #0969DA;
+    --background: #24292F;
+    --gray: #847F90;
+    --white: #FCFCFC;
+    --navbar-height: 60px;
+}
+
+body {
+    font-family: "Red Hat Display", 
+        sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu__wrapper {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 2;
+    gap: 24px; 
+    background-color: var(
+        --background
+    );
+    height: var(--navbar-height);
+    padding: 0px 16px;
+    align-items: center;
+}
+
+.menu__bar {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.logo svg {
+    fill: var(--white);
+}
+     
+.navigation {    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 8px;
+    background-color: var(
+        --background);
+}
+               
+.navigation > li {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  height: 42px;
+}
+
+.navigation > li > button > svg {
+    stroke: var(--white);
+    fill: var(--white);
+    color: var(--white);
+    margin-top: -2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation > li > a {
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navigation > li > button {
+    color: var(--white);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 4px;
+    opacity: 1;
+    align-items: center;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    background: none;
+    display: flex;
+    padding: 3px 0;
+    position: relative;
+    transition: all 0.2s 
+        ease-in-out;
+}
+
+.navigation > li > button:hover, 
+.navigation > li > a:hover {
+    opacity: 0.75;
+}
+
+.navigation > li > button:hover > svg {
+    opacity: 0.75;
+    margin-top: 0px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 42px;
+    min-width: 240px;
+    border-radius: 8px;
+    background-color: var(--white);
+    display: none;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 5px 30px 
+        rgba(27, 31, 35, 0.1), 
+        0 0 1px rgba(27, 31, 35, 0.4), 
+        0 1px 2px rgba(27, 31, 35, 0.15);
+    z-index: 2;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {        
+        opacity: 0;
+        transform: scale(0.99)
+            translateY(-0.7em);
+        transform-origin: top;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) 
+            translateY(0);
+    }
+}
+
+.dropdown h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.list-menu-items {
+    display: flex;
+    list-style-type: none; 
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.list-menu-items > li > a {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    width: 100%;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+
+.list-menu-items > li > a:hover {
+    color: var(--primary);
+}
+
+.list-items-with-description {
+    list-style-type: none;
+}
+
+.list-items-with-description li {
+    display: flex;
+    padding: 4px;
+    gap: 16px;
+    width: 100%;
+}
+
+.list-items-with-description li:hover {
+    color: var(--primary);
+}
+
+.list-items-with-description li svg {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+}
+
+.list-items-with-description li:hover svg {
+    stroke: var(--primary);
+}
+
+.item-title h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-title p {
+    font-size: 12px;
+}
+
+.navigation > li:hover .dropdown {
+    display: flex;
+    opacity: 1;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 4px 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-buttons a:hover {
+    opacity: .75;
+}
+
+.secondary {
+    background: none;
+    color: var(--white);
+    outline: none;
+    border: none;
+}
+
+.primary {
+    color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--white);
+}
+
+.burger-menu {
+    display: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.burger-menu svg {
+    stroke: var(--white);
+}
+
+
+@media (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+
+    .menu__wrapper {
+        justify-content: space-between;
+    }
+
+    .action-buttons {
+        order: -1;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .burger-menu {
+        display: flex;
+        align-items: center;
+    }
+}

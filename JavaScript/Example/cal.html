@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1 create function
+        function printresult(){
+            
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            let opp = document.getElementById("opp").value;
+
+            switch(opp){
+                case '+': document.getElementById("result").innerHTML = +number1 + +number2;
+                break;
+                case '-': document.getElementById("result").innerHTML = number1 - number2;
+                break;
+                case '*': document.getElementById("result").innerHTML = number1 * number2;
+                break;
+                case '/': document.getElementById("result").innerHTML = number1 / number2;
+                break;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <label>Number 1</label>
+    <input type="text" id="number1">
+    <select id="opp">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <label>Number 2</label>
+    <input type="text" id="number2">
+    <br>
+    <br>
+    <button onclick="printresult()">GET Result</button>
+    <h1>Result : <span id="result"></span></h1>
+</body>
+</html>

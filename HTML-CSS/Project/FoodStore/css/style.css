@@ -1,0 +1,378 @@
+.header_box{
+    /* background-color: beige; */
+    height: 100px;
+    border: solid 0px black;
+    width: 1200px;
+    margin: auto;
+    background-color: rgb(245, 245, 155);
+}
+
+.header_manu{
+    list-style: none;
+    float: left;
+}
+
+.menu_items{
+    float: left;
+    border: solid 0px black;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-color: rgb(246, 1, 1);
+    cursor: pointer;
+}
+.logo{
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.center_section{
+    width: 1200px;
+    height: 350px;
+    margin: auto;
+    border: solid 0px black;
+    /* background-color: rgb(245, 245, 155); */
+}
+.center_section_left{
+    width: 295px;
+    height: 300px;
+    float: left;
+    border: solid 0px black;
+    text-align: center;
+    padding-top: 40px;
+}
+.center_section_right{
+    width: 900px;
+    height: 300px;
+    float: left;
+    border: solid 0px black;
+}
+.h1_txt{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.h1_span{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(248, 3, 3);
+    font-weight: bold;
+}
+
+.fork{
+    margin-left: 10px;
+    margin-right: -5px;
+}
+
+.p_txt{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+.h_hr{
+    width: 4px;
+    height: 120px;
+    border: solid 1px black;
+    background-color: black;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: -1px;
+
+}
+.btn_order{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(248, 3, 3);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px rgb(248, 3, 3);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.banner_img{
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+    border: solid 0px black;
+    padding: 20px;
+}
+
+footer{
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+    border: solid 0px black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.left_footer{
+    float: left;
+    width: 540px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.right_footer{
+    float: right;
+    width: 260px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.center_footer{
+    float: left;
+    width: 260px;
+    height: 260px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+/* Shop page css */
+
+.product_section{
+    padding: 50px;
+    width: 1300px;
+    height: 850px;
+    margin: auto;
+    border: solid 0px black;
+    /* background-color: rgb(245, 245, 155); */
+}
+
+.product_box{
+
+    width: 300px;
+    height: 400px;
+    float: left;
+    border: solid 0px black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    cursor: pointer;
+    align-items: center;
+}
+
+.product_img{
+    width: 200px;
+    height: 200px;
+    border: solid 0px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   padding: 20px;
+   margin-left: 20px;
+}
+.product_h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.product_p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.product_btn{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(248, 3, 3);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px rgb(248, 3, 3);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* Contact page css */
+
+.contact_section{
+    padding: 20px;
+    width: 1200px;
+    height: 520px;
+    margin: auto;
+    border: solid 0px black;
+    /* background-color: rgb(245, 245, 155); */
+}
+
+.info_section{
+    width: 400px;
+    height: 500px;
+    float: left;
+    border: solid 0px black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form_section{
+    width: 600px;
+    height: 500px;
+    float: right;
+    border: solid 0px black;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+input{
+    width: 400px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+}
+.btn_submit{
+    width: 420px;
+    height: 40px;
+    background-color: rgb(248, 3, 3);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px rgb(248, 3, 3);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* type of food page  */
+
+.type_section{
+    padding: 50px;
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    border: solid 0px black;
+    /* background-color: rgb(245, 245, 155); */
+}
+.video_section{
+    width: 700px;
+    height: 460px;
+    float: left;
+    border: solid 1px black;
+    margin: 10px;
+    background-color: rgb(245, 245, 155);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 20px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video_menu{
+    width: 372px;
+    height: 480px;
+    float: left;
+    border: solid 1px black;
+    margin: 10px;
+    background-color: rgb(245, 245, 155);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+.menu_box{
+    width: 360px;
+    height: 110px;
+    border: solid 1px black;
+    border-radius:10px;
+    margin: 5px;
+    background-color: rgb(240, 231, 215);
+    
+}
+.menu_img{
+    width: 85px;
+    height: 85px;
+    border: solid 1px black;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+.menu_h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
+.menu_p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: left;
+    margin-top: -14px;
+}
+.menu_button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(248, 3, 3);
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px rgb(248, 3, 3);
+    border-radius: 5px;
+    margin-top: -24px;
+    margin-left: 0px;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Events Example</title>
+  </head>
+  <body>
+    <h1>JavaScript Events Example</h1>
+
+    <button id="clickButton">Click Me!</button>
+    <p id="message"></p>
+
+    <script>
+      // Function to be called when the button is clicked
+      function buttonClickHandler() {
+        let messageElement = document.getElementById('message');
+        messageElement.textContent = 'Button was clicked!';
+        messageElement.style.color = 'green';
+      }
+
+      // Get the button element by its ID
+      let button = document.getElementById('clickButton');
+
+      // Add a click event listener to the button
+      button.addEventListener('click', buttonClickHandler);
+    </script>
+  </body>
+</html>

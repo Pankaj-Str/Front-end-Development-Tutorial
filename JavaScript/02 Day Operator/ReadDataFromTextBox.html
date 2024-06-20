@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method-Function</title>
+    <script>
+        
+            function Add(){
+                let num1 = document.getElementById("n1").value;
+                let num2 = document.getElementById("n2").value;
+                let result = +num1 + +num2;
+                alert("Result : - "+result);
+            }
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label>Enter Number 1</label></td>
+            <td><input type="text" placeholder="Enter Number 1.." id="n1"></input></td>
+        </tr>
+        <tr>
+            <td><label>Enter Number 2</label></td>
+            <td><input type="text" placeholder="Enter Number 2.." id="n2"></input></td>
+        </tr>
+        <tr>
+            <td><button onclick="Add()">Click to Add</button></td>
+        </tr>
+    </table>
+</body>
+</html>

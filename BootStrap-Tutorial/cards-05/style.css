@@ -1,0 +1,140 @@
+:root {
+    --white: #fff;
+    --offset: 1rem;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 5rem;
+    max-width: 50rem;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    max-width: 18rem;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.corner::before,
+.corner::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.right-top::before,
+.right-top::after {
+    top: var(--offset);
+    right: var(--offset);
+}
+
+.right-bottom::before,
+.right-bottom::after {
+    bottom: var(--offset);
+    right: var(--offset);
+}
+
+.left-bottom::before,
+.left-bottom::after {
+    bottom: var(--offset);
+    left: var(--offset);
+}
+
+.left-top::before,
+.left-top::after {
+    top: var(--offset);
+    left: var(--offset);
+}
+
+.corner::before {
+    width: 0;
+    height: 1px;
+}
+
+.corner::after {
+    height: 0;
+    width: 1px;
+}
+
+.card figcaption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    max-width: 20rem;
+    width: 100%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.4s ease;
+}
+
+.card p {
+    opacity: 0;
+    font-size: 0.8rem;
+    transition: all 0.4s ease;
+}
+
+.card:hover img {
+    zoom: 1;
+    filter: alpha(opacity=20);
+    opacity: 0.3;
+}
+
+.card:hover .corner::before {
+    width: 40px;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.card:hover .corner::after {
+    height: 40px;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.card:hover h3 {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.card:hover p {
+    opacity: 1;
+    transition-delay: 0.35s;
+}

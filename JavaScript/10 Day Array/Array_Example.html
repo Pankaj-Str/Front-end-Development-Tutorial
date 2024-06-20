@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+
+    <script>
+      
+        function data(){
+            
+            course = ["php","javascript","python","ruby","c++"]
+
+            size = course.length;
+            
+            for(a = 0;a < size;a++){
+
+                document.getElementById("items").innerHTML += "<li>"+(a+1)+" = "+course[a]+"</li>";
+
+            }
+
+        }
+            
+
+            
+
+     
+    </script>
+
+</head>
+<body>
+
+    <ul id="items">
+        
+    </ul>
+
+    <button onclick="data()">
+        click
+    </button>
+
+</body>
+</html>
+
+<style>
+
+
+
+    li{
+        background-color: yellow;
+        padding: 10px;
+        margin: 10px;
+        border : solid 1px black;
+        width: 50%;
+    }
+    ul{
+        list-style: none;
+    }
+
+</style>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //if (condition) {
+            // Code to execute if the condition is true
+        //} else {
+            // Code to execute if the condition is false
+        //}
+
+        function findsmallest(){
+            
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+
+            if(number1 < number2) // condition
+            {
+                // Code to execute if the condition is true
+                document.getElementById("result").innerHTML = number1;
+            }
+            else
+            {
+                // Code to execute if the condition is false
+                document.getElementById("result").innerHTML = number2;
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+     <label>Number 1 </label>
+     <input type="text" id="number1">
+     <br> 
+     <br>
+     <label>Number 2 </label>
+     <input type="text" id="number2">
+     <br>
+     <br>
+     <button onclick="findsmallest()">Find Smallest</button> 
+     <h1>Your Smallest No. =  <span id="result"></span> </h1>
+</body>
+</html>

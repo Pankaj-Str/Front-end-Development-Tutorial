@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    $(".content").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content").is(':visible') ? 'Read More' : 'Read Less';
+        $(".show_hide").text(txt);
+        $(this).next('.content').slideToggle(200);
+    });
+});
+</script>
+</head>
+<body>
+  <a href="#" class="show_hide" data-content="toggle-text">Read More...</a>
+  
+  <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laudantium repellendus tenetur optio aspernatur distinctio, deleniti corrupti maiores voluptatum minus, provident repellat minima rerum quas? Aspernatur totam incidunt libero doloremque.</div>
+
+
+</body>
+</html>

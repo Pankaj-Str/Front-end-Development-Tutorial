@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ - Question</title>
+    <script>
+
+        function mcq(){
+            
+            var Question1 = document.getElementsByName('Question1');
+ 
+            
+            for (i = 0; i < Question1.length; i++) {
+                if (Question1[i].checked)
+                    var answer = Question1[i].value;
+                       if(answer == "cwp"){
+                        document.getElementById("answer1").innerHTML
+                        = "Right Answer : cwp "
+                       }else{
+                        document.getElementById("answer1").innerHTML
+                        = "Wrong Answer : ";
+                       }      
+                    
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <p>1. Which of the following rivers was known as Purushni in the Vedic period ?</p>
+    1. <input type="radio" value="cwp" name="Question1"> CWP <br>
+    2. <input type="radio" value="pankaj" name="Question1"> Pankaj <br>
+    3. <input type="radio" value="joy" name="Question1"> Joy <br>
+    4. <input type="radio" value="p4n" name="Question1"> p4n <br> <br>
+    <button onclick="mcq()">Check Answer</button>
+    <p>
+        Answer : <span id="answer1"></span>
+    </p>
+</body>
+</html>

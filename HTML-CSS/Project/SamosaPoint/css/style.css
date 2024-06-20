@@ -1,0 +1,181 @@
+body{
+    background-image: url(../img/samosa-bg1.png);
+}
+
+header{
+    height: 70px;
+    width: 1200px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+}
+
+.menu_list{
+    list-style: none;
+   
+}
+.menu_item{
+    float: left;
+    border: solid 1px rgb(255, 128, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: rgb(236, 186, 121);
+    color: black;
+    cursor: pointer;
+}
+.logo{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    height: 270px;
+    border: solid 0px rgb(104, 43, 43);
+
+}
+
+.left_container{
+    width: 300px;
+    float: left;
+    margin-left: 90px;
+    
+}
+.right_container{
+    width: 600px;
+    float: right;
+}
+.center_heading{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-right: 30px;
+    
+}
+.color_span{
+    color: rgb(255, 128, 0);
+    font-size: 35px;
+}
+.center_p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.btn{
+    background-color: rgb(255, 128, 0);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+   
+}
+
+.product_container{
+    width: 1370px;
+    margin: auto;
+    height: 1150px;
+    border: solid 0px rgb(104, 43, 43);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.center_heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-right: 30px;
+}
+.product{
+    width: 300px;
+    float: left;
+    margin: 5px;
+    border: solid 1px rgb(255, 128, 0);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(236, 186, 121);
+}
+.product_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.center_heading_product{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    margin-right: 30px;
+}
+.center_p_product{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.btn_product{
+    background-color: rgb(236, 186, 121);
+    color: white;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 20px;  
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+/* page contact us css */
+
+.contact_container_center{
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+    border: solid 0px rgb(104, 43, 43); 
+}
+
+.map_section{
+    width: 696px;
+    float: left;
+    height: 400px;
+    border: solid 0px black;
+}
+.form_section{
+    width: 500px;
+    float: left;
+    height: 400px;
+    border: solid 0px black;
+}
+
+label{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    width: 355px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: solid 1px rgb(250, 146, 2);
+}
+textarea{
+    width: 355px;
+    height: 100px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: solid 1px rgb(250, 146, 2);
+}

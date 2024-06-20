@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Animation @codewithpankaj.com</title>
+  <!-- Include jQuery library from a CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Add some basic styles for the animated element */
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transition: background-color 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation Example</h1>
+  <button id="animate-button">Animate</button>
+  <div id="box"></div>
+
+  <!-- Embed jQuery code directly in the HTML file -->
+  <script>
+    $(document).ready(function() {
+      // Function to animate the element with ID "box"
+      $("#animate-button").click(function() {
+        // Animate the "box" element's width and background color
+        $("#box").animate({
+          width: "400px",
+          height:"400px",
+          backgroundColor: "lightgreen"
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>
