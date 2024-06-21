@@ -1,0 +1,37 @@
+.carousel-container {
+    width: 800px; /* Adjust to your desired width */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* For positioning buttons */
+    overflow: hidden; /* Hide overflow for slide effect */
+  }
+  
+  .carousel-track {
+    display: flex; /* Arrange images horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .carousel-track img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* Ensure buttons are above the images */
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
