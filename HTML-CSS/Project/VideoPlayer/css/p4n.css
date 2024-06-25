@@ -1,0 +1,53 @@
+.center_section{
+    height: 600px;
+    width: 1200px;
+    background-color: antiquewhite;
+    border:solid 1px black;
+    margin: auto;
+}
+.video_section{
+    height: 600px;
+    width: 800px;
+    border: solid 1px black;
+    float: left;
+}
+.list_section{
+    height: 600px;
+    width: 396px;
+    border: solid 1px black;
+    float: left;
+}
+.menu{
+    height: 100px;
+    width: 350px;
+    border: solid 1px black;
+}
+
+.left_section{
+    height: 95px;
+    width: 100px;
+    border: solid 1px black;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+}
+.right_section{
+    height: 100px;
+    width: 236px;
+    border: solid 1px black;
+    float: left;
+    padding-left: 10px;
+}
+h3{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+}
+p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: -12px;
+    margin-bottom: 5px;
+}
+
