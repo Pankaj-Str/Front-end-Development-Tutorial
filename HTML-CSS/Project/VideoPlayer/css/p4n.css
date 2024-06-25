@@ -1,32 +1,34 @@
 .center_section{
     height: 600px;
     width: 1200px;
-    background-color: antiquewhite;
-    border:solid 1px black;
+    border:solid 0px black;
     margin: auto;
 }
 .video_section{
     height: 600px;
     width: 800px;
-    border: solid 1px black;
+    border: solid 0px black;
     float: left;
 }
 .list_section{
     height: 600px;
     width: 396px;
-    border: solid 1px black;
+    border: solid 0px black;
     float: left;
 }
 .menu{
     height: 100px;
     width: 350px;
-    border: solid 1px black;
+    border: solid 2px rgb(74, 73, 73);
+    margin: 10px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 20px;
 }
 
 .left_section{
     height: 95px;
     width: 100px;
-    border: solid 1px black;
+    border: solid 0px black;
     float: left;
     text-align: center;
     padding-top: 5px;
@@ -34,7 +36,7 @@
 .right_section{
     height: 100px;
     width: 236px;
-    border: solid 1px black;
+    border: solid 0px black;
     float: left;
     padding-left: 10px;
 }
@@ -51,3 +53,9 @@ p{
     margin-bottom: 5px;
 }
 
+.video{
+    border: solid 5px black;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 45px;
+}
