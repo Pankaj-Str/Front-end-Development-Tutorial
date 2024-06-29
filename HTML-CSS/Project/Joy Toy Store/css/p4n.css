@@ -7,7 +7,7 @@
 }
 .logo{
     float: left;
-    width: 100px;
+    width: 400px;
     height: 70px;
     text-align: center;
     padding-top: 1px;
@@ -35,4 +35,10 @@ a{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+.logo_name{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    color: brown;
 }
