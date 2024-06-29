@@ -1,0 +1,38 @@
+.header{
+    height: 70px;
+    width: 1200px;
+    border: solid 0px black;
+    margin: auto;
+    
+}
+.logo{
+    float: left;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    padding-top: 1px;
+}
+.menu{
+    float: left;
+}
+.ul_c{
+    list-style: none;
+}
+.li_c{
+    display: inline-block;
+    border: saddlebrown solid 1px;
+    background-color: antiquewhite;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    margin-left: 15px;
+    border-radius: 30px;
+    margin-right: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
