@@ -40,5 +40,55 @@ a{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     float: right;
-    color: brown;
+    color: rgb(211, 211, 211);
+}
+
+
+/* center section  */
+
+.center_section{
+    height: 300px;
+    width: 1200px;
+    background-color: black;
+    border: solid 0px white;
+    margin: auto;
+}
+
+.left_center{
+    float: left;
+    height: 270px;
+    width: 400px;
+    border: solid 0px white;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.right_center{
+    float: left;
+    color: white;
+    height: 300px;
+    width: 795px;
+    border: solid 0px wheat;
+}
+.h1_c{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+}
+
+.s_p{
+    color: white;
+}
+.p_c{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.view_more{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    background-color: yellow;
 }
