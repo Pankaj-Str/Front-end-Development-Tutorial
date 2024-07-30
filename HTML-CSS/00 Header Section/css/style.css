@@ -1,0 +1,31 @@
+.header{
+    height: 100px;
+    width: 1200px;
+    /* background-color: antiquewhite; */
+    border: solid 0px black;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    float: left;
+}
+li{
+    border: solid 1px black;
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin-left: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: black;
+    color: wheat;
+}
+.logo{
+    float: left;
+    padding-top: 16px;
+    margin-left: 20px;
+}
