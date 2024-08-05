@@ -82,7 +82,6 @@
 <hr>
 <!-- card section start -->
 
-
     <div class="container " id="shop">
         <div class="row" style="padding-top: 70px;">
             <!-- start card item 1 -->
@@ -100,12 +99,57 @@
                       </div>
                       <div class="card-footer text-center bg-success">
                        
-                        <button class="btn btn btn-outline-light"> <i class="bi bi-bag-check"></i> 300 ₹</button>
+                        <button class="btn btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#product1"> <i class="bi bi-bag-check"></i> 300 ₹</button>
                       
-                       </div>
+                      </div>
                       
                   </div>
               </div>
+
+<!-- start cart modal  -->
+
+     
+     <!-- Modal -->
+     <div class="modal fade" id="product1">
+       <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Black Samosa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col-auto d-none d-lg-block p-3">
+                          <img src="image/fast-food.png" class="img-fluid" width="200" height="250">
+                      </div>
+                      <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Post title</h3>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                       
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="modal-footer bg-success">
+            <button class="btn btn btn-outline-light"> <i class="bi bi-bag-check"></i> 300 ₹</button>
+          </div>
+        </div>
+       </div>
+     </div>
+
+<!-- end cart modal -->
+
+
               <div class="col-sm-3 p-3">
                 <div class="card shadow-lg border border-2 border-success">
                     <!-- <div class="card-header"> -->
