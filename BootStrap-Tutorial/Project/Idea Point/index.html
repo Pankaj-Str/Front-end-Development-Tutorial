@@ -13,7 +13,7 @@
 </head>
 <body class="bg-dark">
 
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
 
         <div class="container border-1 border-bottom border-warning">
             <a class="navbar-brand text-warning" href="#">
@@ -23,31 +23,31 @@
             </span></a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#"> <i class="bi bi-house-door"></i> &nbsp; Home</a>
+                  <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#home"> <i class="bi bi-house-door"></i> &nbsp; Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#"> <i class="bi bi-person-rolodex"></i> &nbsp; Contact us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#"> <i class="bi bi-cart-fill"></i> &nbsp; Shop</a>
+                    <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#shop"> <i class="bi bi-cart-fill"></i> &nbsp; Shop</a>
                   </li>      
                   <li class="nav-item">
                     <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#"> <i class="bi bi-microsoft-teams"></i> &nbsp; @teamidea</a>
                   </li> 
                   <li class="nav-item">
-                    <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#"> <i class="bi bi-database"></i> &nbsp; #services</a>
+                    <a class="nav-link text-warning border border-1 border-warning rounded-pill ps-4 pe-4 bg-black m-2" href="#faq"> <i class="bi bi-chat-right-dots"></i> &nbsp; #faq</a>
                   </li>        
                 
                 </ul>
         </div>
 
     </nav>
-
+<hr>
     <!-- start center section  -->
     
-      <div class="container mt-3">
+      <section class="container" id="home" style="height: 800px; padding-top: 100px;">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 pt-5">
               <img src="image/idea.png" class="img-fluid">
             </div>
             <div class="col-sm-8 pt-4">
@@ -55,6 +55,7 @@
                 <img src="image/idea.png" height="50" alt="" width="50">
                 Point
             </span></a>
+            
               <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
               amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis nato
               que penatibus et magnis dis parturient montes, nascetur ridiculus
@@ -70,10 +71,53 @@
                   Someone famous in <cite title="Source Title">@codeswithpankaj.com</cite>
                 </figcaption>
               </figure>
-              <button class="btn btn-outline-warning"><i class="bi bi-shop"></i> &nbsp; View More</button>
+              
+             
+              <div class="row mt-5">
+                <div class="col-sm-1 text-light">
+                  <h1 class="fs-1"><i class="bi bi-star-fill"></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star-fill"></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star-fill"></i></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star-fill"></i></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star-fill"></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star-half"></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star"></i></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star"></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star"></i></h1>
+                </div>
+                <div class="col-sm-1  text-light">
+                  <h1 class="fs-1"><i class="bi bi-star"></i></h1>
+                </div>
+              </div>
+              <figure class="mt-2 mb-5">
+               
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">@codeswithpankaj.com</cite>
+                </figcaption>
+              </figure>
+              <button class="btn btn-outline-warning mb-5 mt-3"><i class="bi bi-shop"></i> &nbsp; View More</button>
+              <button class="btn btn-outline-warning mb-5 mt-3"> <i class="bi bi-amazon"></i> &nbsp; Offer</button>
+           
             </div>
           </div>
-      </div>
+          
+        </section>
     
     
     <!-- end center section  -->
@@ -81,7 +125,7 @@
     <!-- center card section  -->
 
 
-    <div class="container mt-5 mb-5">
+    <div class="container" id="shop" style="height: 800px; padding-top: 100px;">
       <div class="row">
         <div class="col-sm-3">
           <div class="card bg-dark text-light border border-1 border-white p-2" >
@@ -149,6 +193,69 @@
         </div>
       </div>
     </div>
+
+
+    <!-- start service section -->
+
+      <section id="faq" class="container" style="height: 800px; padding-top: 100px;">
+          <div class="row">
+            <h1 class="text-light">FAQ</h1>
+            <div class="col-sm-4">
+              <img src="../Techno-Hub/img/techno.png" class="img-fluid">
+              </div>
+            <div class="col-sm-8">
+                <div class="accordion" id="faq">
+                    <!-- start item 1  -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button bg-dark text-light border border-1 border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show bg-dark text-warning" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end item 1  -->
+                    <!-- start item 2  -->
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-light border border-1 border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse  bg-dark text-warning" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end item 2  -->
+                     <!-- start item 3  -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-light border border-1 border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse  bg-dark text-warning" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end item 3  -->
+                </div>
+            </div>
+          </div>
+      </section>
+
+
+    <!-- end service section -->
+
 
     
 </body>

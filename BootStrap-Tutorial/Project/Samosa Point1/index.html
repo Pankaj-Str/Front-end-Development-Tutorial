@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#"><i class="bi bi-house-door"></i> Home</a>
+                <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#home"><i class="bi bi-house-door"></i> Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link bg-success text-light rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#"><i class="bi bi-microsoft-teams"></i> @TeamSamosa</a>
@@ -38,7 +38,7 @@
                 <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#shop"><i class="bi bi-cart3"></i> Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#"><i class="bi bi-amd"></i> Type of Samosa</a>
+                <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#typeofsamosa"><i class="bi bi-amd"></i> Type of Samosa</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page"  data-bs-toggle="offcanvas" href="#login"><i class="bi bi-person"></i> login</a>
@@ -53,6 +53,84 @@
     </div>
 
    </nav>
+   
+   <!-- Slider start  -->
+    <style>
+      .darken-image {
+           filter: brightness(50%);
+        }
+        /* #home{
+          padding-top: 70px;
+        }
+        #contact{
+          padding-top: 70px;
+        }
+        #typeofsamosa{
+          padding-top: 100px;
+          padding-bottom: 100px;
+        } */
+    </style>
+   
+
+   <!-- Slider end  -->
+
+
+   <div class="container-fluid" id="home">
+    <div class="row">
+        <div class="col-sm-12"></div>
+    </div>
+    <div class="row">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/01.jpg" class="w-100 darken-image"  style="height: 560px;">
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="image/02.jpg" class="w-100 darken-image" style="height: 560px;">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="image/03.jpg" class="w-100 darken-image" style="height: 560px;">
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</div>
+
+
 
 
    <!-- off canvas -->
@@ -121,7 +199,7 @@
             <!-- start card item 1 -->
 
               <div class="col-sm-3 p-3">
-                  <div class="card shadow-lg border border-2 border-success">
+                  <div class="card shadow-lg border border-0 border-success">
                       <!-- <div class="card-header"> -->
                         <img src="image/diet.png" class="img-fluid p-4"> 
                       <!-- </div> -->
@@ -185,7 +263,7 @@
 
 
               <div class="col-sm-3 p-3">
-                <div class="card shadow-lg border border-2 border-success">
+                <div class="card shadow-lg border border-0 border-success">
                     <!-- <div class="card-header"> -->
                       <img src="image/fast-food.png" class="img-fluid p-4"> 
                     <!-- </div> -->
@@ -204,7 +282,7 @@
                 </div>
             </div>
             <div class="col-sm-3 p-3">
-              <div class="card shadow-lg border border-2 border-success">
+              <div class="card shadow-lg border border-0 border-success">
                   <!-- <div class="card-header"> -->
                     <img src="image/healthy-food.png" class="img-fluid p-4"> 
                   <!-- </div> -->
@@ -223,7 +301,7 @@
               </div>
           </div>
           <div class="col-sm-3 p-3">
-            <div class="card shadow-lg border border-2 border-success">
+            <div class="card shadow-lg border border-0 border-success">
                 <!-- <div class="card-header"> -->
                   <img src="image/vegetables.png" class="img-fluid p-4"> 
                 <!-- </div> -->
@@ -247,7 +325,7 @@
           <!-- start card item 1 -->
 
             <div class="col-sm-3 p-3">
-                <div class="card shadow-lg border border-2 border-success">
+                <div class="card shadow-lg border border-0 border-success">
                     <!-- <div class="card-header"> -->
                       <img src="image/diet.png" class="img-fluid p-4"> 
                     <!-- </div> -->
@@ -266,7 +344,7 @@
                 </div>
             </div>
             <div class="col-sm-3 p-3">
-              <div class="card shadow-lg border border-2 border-success">
+              <div class="card shadow-lg border border-0 border-success">
                   <!-- <div class="card-header"> -->
                     <img src="image/fast-food.png" class="img-fluid p-4"> 
                   <!-- </div> -->
@@ -285,7 +363,7 @@
               </div>
           </div>
           <div class="col-sm-3 p-3">
-            <div class="card shadow-lg border border-2 border-success">
+            <div class="card shadow-lg border border-0 border-success">
                 <!-- <div class="card-header"> -->
                   <img src="image/healthy-food.png" class="img-fluid p-4"> 
                 <!-- </div> -->
@@ -304,7 +382,7 @@
             </div>
         </div>
         <div class="col-sm-3 p-3">
-          <div class="card shadow-lg border border-2 border-success">
+          <div class="card shadow-lg border border-0 border-success">
               <!-- <div class="card-header"> -->
                 <img src="image/vegetables.png" class="img-fluid p-4"> 
               <!-- </div> -->
@@ -376,6 +454,68 @@
 </div>
 
 
+
+    <div class="mt-4 mb-4 container" id="typeofsamosa">
+      <h1 class="fs-1">Type of Samosa</h1>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="image/samosa.png" class="img-fluid">
+        </div>
+        <div class="col-sm-8">
+
+          <!-- start accordion -->
+
+            <div class="accordion" id="typeof">
+
+              <!-- start item 1 -->
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#type1" aria-expanded="true" aria-controls="type1">
+                      Are there different types of samosas?
+                    </button>
+                  </h2>
+                  <div id="type1" class="accordion-collapse collapse show" data-bs-parent="#typeof">
+                    <div class="accordion-body">
+                      It is a pastry with a savory filling, mostly vegetables, spiced potatoes, onions, peas, also non-vegetarian meat, or fish. It is made into different shapes, including triangular, cone, or crescent, depending on the region. Samosas are often accompanied by chutney, and have origins in medieval times or earlier.
+                    </div>
+                  </div>
+                </div>
+
+
+
+              <!-- end item 1 -->
+               <!-- start item 1 -->
+
+               <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#type2" aria-expanded="true" aria-controls="type2">
+                    Are there different types of samosas?
+                  </button>
+                </h2>
+                <div id="type2" class="accordion-collapse collapse" data-bs-parent="#typeof">
+                  <div class="accordion-body">
+                    It is a pastry with a savory filling, mostly vegetables, spiced potatoes, onions, peas, also non-vegetarian meat, or fish. It is made into different shapes, including triangular, cone, or crescent, depending on the region. Samosas are often accompanied by chutney, and have origins in medieval times or earlier.
+                  </div>
+                </div>
+              </div>
+
+
+
+            <!-- end item 1 -->
+
+            </div>
+
+
+          <!-- end accordion -->
+
+
+
+        </div>
+      </div>
+
+    </div>
 
     
 </body>
