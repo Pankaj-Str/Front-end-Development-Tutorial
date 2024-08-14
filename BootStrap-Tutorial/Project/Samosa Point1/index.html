@@ -40,6 +40,9 @@
               <li class="nav-item">
                 <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page" href="#"><i class="bi bi-amd"></i> Type of Samosa</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link bg-success text-light  rounded-pill ps-4 pe-4 m-2 text-center menu_shadow" aria-current="page"  data-bs-toggle="offcanvas" href="#login"><i class="bi bi-person"></i> login</a>
+              </li>
               
             </ul>
            
@@ -50,6 +53,37 @@
     </div>
 
    </nav>
+
+
+   <!-- off canvas -->
+
+
+   <div class="offcanvas offcanvas-end bg-success" id="login">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Login</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+   
+    <div class="offcanvas-body">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  
+  </div>
 
 
 
