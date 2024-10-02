@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $( "button" ).first().on( "click", function() {
-          $( "p" ).first().fadeToggle( "slow", "linear" );
-        } );
-        $( "button" ).last().on( "click", function() {
-          $( "p" ).last().fadeToggle( "fast", function() {
-            $( "#log" ).append( "<div>finished</div>" );
-          } );
-        } );
+        $(document).ready(function(){
+        $("#out").click(function(){
+            //$("#box").fadeOut();
+            //$("#box").fadeOut("slow");
+            $("#box").fadeOut(3000);
+          });
+        });
+
+        $(document).ready(function(){
+            $("#in").click(function(){
+                //$("#box").fadeIn();
+                //$("#box").fadeIn("slow");
+                $("#box").fadeIn(3000);
+              });
+            });
+
+            $(document).ready(function(){
+                $("#toggle").click(function(){
+                    //$("#box").fadeToggle();
+                    //$("#box").fadeToggle("slow");
+                    $("#box").fadeToggle(3000);
+                  });
+                });
+
+                $(document).ready(function(){
+                    $("#to").click(function(){
+                        //$("#box").fadeToggle();
+                        //$("#box").fadeToggle("slow");
+                        $("#box").fadeTo("slow",0.15);
+                      });
+                    });
         </script>
 
 
