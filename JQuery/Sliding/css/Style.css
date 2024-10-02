@@ -1,0 +1,18 @@
+* { Box-sizing: Border-box }
+.mycontainer{
+	white-space: nowrap;
+	overflow-x: hidden;
+	width: 204px;
+}
+.box{
+	display: inline-block;
+	border: 2px black solid;
+  padding: 20px;
+	width: 200px;
+	height: 100px;
+	vertical-align: top;
+  background-color: pink;
+}
+.box2{
+	background-color: yellow;
+}
