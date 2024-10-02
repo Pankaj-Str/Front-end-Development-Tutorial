@@ -3,46 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comprehensive HTML Form Example</title>
 </head>
 <body>
-    
-    <form>
+    <h1>Comprehensive Registration Form</h1>
+    <form action="/submit-form" method="post" enctype="multipart/form-data">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
 
+            <!-- Text Input -->
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required><br><br>
 
-        <label>Name:</label>
-        <input type="text" placeholder="Enter Your Name...">
-        <label>Email:</label>
-        <input type="email" placeholder="Enter Your Email...">
-        <label>Password:</label>
-        <input type="password" placeholder="Enter Your Password...">
-        <label>Date of Birth</label>
-        <input type="date" placeholder="Enter Your Date of Birth...">
-        <label>Phone Number:</label>
-        <input type="tel" placeholder="Enter Your Phone Number...">
-        <label>Address:</label>
-        <textarea></textarea>
-        <label>Upload file</label>
-        <input type="file">
-        <label>City</label>
-        <select>
-            <option value="Kathmandu">Kathmandu</option>
-            <option value="Pokhara">Pokhara</option>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required><br><br>
 
-        </select>
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
 
+            <!-- File Upload -->
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile_pic" accept="image/*"><br><br>
 
-        <label>Select your interests:</label><br>
-        <input type="checkbox" id="music" name="interest" value="music">
-        <label for="music">Music</label><br>
-        
-        <input type="checkbox" id="sports" name="interest" value="sports">
-        <label for="sports">Sports</label><br>
+            <!-- Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
 
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
 
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset><br>
+
+        <!-- Address Section -->
+        <fieldset>
+            <legend>Address</legend>
+
+            <!-- Address Line 1 -->
+            <label for="address1">Address Line 1:</label>
+            <input type="text" id="address1" name="address1" required><br><br>
+
+            <!-- Address Line 2 -->
+            <label for="address2">Address Line 2:</label>
+            <input type="text" id="address2" name="address2"><br><br>
+
+            <!-- City -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <!-- State -->
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <!-- Country Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="uk">UK</option>
+            </select><br><br>
+
+            <!-- Zip Code -->
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" pattern="[0-9]{6}" required><br><br>
+        </fieldset><br>
+
+        <!-- Account Information Section -->
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" minlength="8" required><br><br>
+
+            <!-- Security Question -->
+            <label for="security-question">Security Question:</label>
+            <select id="security-question" name="security_question" required>
+                <option value="">Select a security question</option>
+                <option value="pet">What was the name of your first pet?</option>
+                <option value="school">What is the name of your primary school?</option>
+                <option value="city">In which city were you born?</option>
+            </select><br><br>
+
+            <!-- Security Answer -->
+            <label for="security-answer">Answer:</label>
+            <input type="text" id="security-answer" name="security_answer" required><br><br>
+        </fieldset><br>
+
+        <!-- Preferences Section -->
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <!-- Newsletter Subscription -->
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+
+            <!-- Preferred Contact Method -->
+            <label>Preferred Contact Method:</label><br>
+            <input type="checkbox" id="contact-email" name="contact_method" value="email">
+            <label for="contact-email">Email</label><br>
+            <input type="checkbox" id="contact-phone" name="contact_method" value="phone">
+            <label for="contact-phone">Phone</label><br><br>
+
+            <!-- Favorite Programming Language -->
+            <label for="language">Favorite Programming Language:</label>
+            <select id="language" name="language[]" multiple>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="c++">C++</option>
+            </select><br><br>
+        </fieldset><br>
+
+        <!-- Additional Information Section -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <!-- Textarea -->
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="5" cols="50" placeholder="Tell us about yourself..."></textarea><br><br>
+
+            <!-- Range Input -->
+            <label for="experience">Experience Level (1 to 10):</label>
+            <input type="range" id="experience" name="experience" min="1" max="10"><br><br>
+
+            <!-- Website URL -->
+            <label for="website">Personal Website:</label>
+            <input type="url" id="website" name="website"><br><br>
+        </fieldset><br>
+
+        <!-- Terms and Conditions -->
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label><br><br>
+        </fieldset><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset Form">
     </form>
-
-
-
 </body>
 </html>
