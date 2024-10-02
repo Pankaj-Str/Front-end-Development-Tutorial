@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        $( "button" ).first().on( "click", function() {
+          $( "p" ).first().fadeToggle( "slow", "linear" );
+        } );
+        $( "button" ).last().on( "click", function() {
+          $( "p" ).last().fadeToggle( "fast", function() {
+            $( "#log" ).append( "<div>finished</div>" );
+          } );
+        } );
+        </script>
+
+
+    <style>
+        .container {
+            width: 1200px;
+            height: 100px;
+            margin: auto;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button id="in">In</button>
+    <button id="out">out</button>
+    <button id="toggle">toggle</button>
+    <button id="to">to</button>
+    <div class="container" id="box"></div>
+</body>
+</html>
