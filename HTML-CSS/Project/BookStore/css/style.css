@@ -1,0 +1,19 @@
+.outerbox{
+    height: 500px;
+    width: 1200px;
+    border: solid 1px black;
+    background-color: antiquewhite;
+    margin: auto;
+}
+.leftbox{
+    height: 500px;
+    width: 400px;
+    float: left;
+    background-color: rgb(173, 100, 6);
+}
+.rightbox{
+    height: 500px;
+    width: 800px;
+    float: left;
+    background-color: rgb(126, 112, 95);
+}
