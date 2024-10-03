@@ -1,19 +1,48 @@
 .outerbox{
-    height: 500px;
+    height: 280px;
     width: 1200px;
     border: solid 1px black;
-    background-color: antiquewhite;
+   
     margin: auto;
 }
 .leftbox{
-    height: 500px;
+    height: 280px;
     width: 400px;
     float: left;
-    background-color: rgb(173, 100, 6);
+   
 }
 .rightbox{
-    height: 500px;
+    height: 280px;
     width: 800px;
     float: left;
-    background-color: rgb(126, 112, 95);
+    
+}
+.store_heading{
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+ 
+}
+.book{
+    color: brown;
+}
+.store_subheading{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  
+}
+.store_text{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+   
+}
+.btn_viewmore{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
