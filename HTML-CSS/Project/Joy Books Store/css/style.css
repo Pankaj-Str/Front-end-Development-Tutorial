@@ -1,0 +1,53 @@
+.header{
+    height: 100px;
+    width: 1200px;
+    border: solid 0px black;
+    margin: auto;
+}
+.logo{
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: solid 0px black;
+}
+.logo_name{
+    float: left;
+    height: 100px;
+    width: 200px;
+    border: solid 0px black;
+}
+.menu{
+    float: left;
+    height: 100px;
+    width: 894px;
+    border: solid 0px black;
+}
+.logo_text{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 30px;
+    color: rgb(254, 46, 46);
+}
+.u_m{
+    list-style: none;
+    
+}
+
+.l_i{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: solid 1px rgb(56, 139, 255);
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: red;
+       
+}
+a{
+    text-decoration: none;color: white; 
+}
