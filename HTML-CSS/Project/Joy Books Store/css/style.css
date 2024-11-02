@@ -1,3 +1,9 @@
+
+.bg_outer {
+    /* background-image: url("../image/open-book.png"); */
+    /* background-repeat: repeat;    */
+  }
+
 .header{
     height: 100px;
     width: 1200px;
@@ -86,7 +92,7 @@ a{
 }
 .sub_heading{
     font-size: 40px;
-    color: blue;
+    color: rgb(85, 139, 226);
     text-decoration: solid;
 }
 .heading_sub_2{
@@ -105,7 +111,7 @@ a{
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #4CAF50;
+    background-color: #68048d;
     color: white;
     border: solid  1px rgb(0, 69, 15);
     border-radius: 10px;
