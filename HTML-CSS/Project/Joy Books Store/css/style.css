@@ -51,3 +51,29 @@
 a{
     text-decoration: none;color: white; 
 }
+
+/* center section */
+
+.center_section{
+    height:400px;
+    width:1200px;
+    border : solid 1px black;
+    margin:auto;
+}
+.left_section{
+    height:400px;
+    width:400px;
+    border : solid 1px black; 
+    float: left;
+}
+
+.right_section{
+    height:400px;
+    width:796px;
+    border : solid 1px black;
+    float: left; 
+}
+
+.heading_store_1{
+    font-size: 30px;
+}
