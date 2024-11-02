@@ -57,23 +57,67 @@ a{
 .center_section{
     height:400px;
     width:1200px;
-    border : solid 1px black;
+    border : solid 0px black;
     margin:auto;
 }
 .left_section{
     height:400px;
     width:400px;
-    border : solid 1px black; 
+    border : solid 0px black; 
     float: left;
+   
 }
 
 .right_section{
     height:400px;
-    width:796px;
-    border : solid 1px black;
+    width:786px;
+    border : solid 0px black;
     float: left; 
+    padding-left: 10px;
 }
 
 .heading_store_1{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+.sub_heading{
+    font-size: 40px;
+    color: blue;
+    text-decoration: solid;
+}
+.heading_sub_2{
+    font-size: 25px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+.heading_text_3{
+    font-size: 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.view_more{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: solid  1px rgb(0, 69, 15);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.list_item{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.book_list{
+    margin-left: -40px;
 }
