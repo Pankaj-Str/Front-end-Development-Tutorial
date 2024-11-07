@@ -127,3 +127,20 @@ a{
 .book_list{
     margin-left: -40px;
 }
+
+
+/* shop section */
+
+.product_section{
+    height:500px;
+    width: 1200px;
+    margin: auto;
+    border:  solid 1px black;
+}
+.p_table{
+    border: solid 1px red;
+}
+
+.td_table{
+    
+}
