@@ -17,6 +17,7 @@
 <body>
   <h1>Animation with Callback Example</h1>
   <button id="animate-button">Animate</button>
+  <button id="animate-button1">Animate1</button>
   <div id="box"></div>
 
   <!-- Embed jQuery code directly in the HTML file -->
@@ -26,11 +27,21 @@
       $("#animate-button").click(function() {
         // Animate the "box" element's left position to 200px over 1000 milliseconds
         $("#box").animate({
-           left: "200px"
+           left: "500px"
         }, 1000, function() {
           // Callback function to execute when the animation is complete
-          alert("Animation complete!");
+         // alert("Animation complete!");
         });
+    
+      });
+      $("#animate-button1").click(function() {
+        // Animate the "box" element's left position to 200px over 1000 milliseconds
+        $("#box").animate({
+           left: "0px"
+        }, 1000, function() {
+         
+        });
+    
       });
     });
   </script>
