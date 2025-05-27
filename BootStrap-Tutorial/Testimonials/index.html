@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Testimonials</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .testimonial-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #212529;
+      font-weight: bold;
+    }
+
+    .testimonial-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      background-color: #ffffff;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .testimonial-content {
+      font-style: italic;
+      color: #495057;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: #212529;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .author-info {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .card-body {
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+    <h2 class="testimonial-title">What Our Clients Say</h2>
+    <div class="row g-4" id="testimonialContainer">
+      <!-- Testimonials will be injected here -->
+    </div>
+  </div>
+
+  <script>
+    const testimonialContainer = document.getElementById('testimonialContainer');
+
+    const sampleComments = [
+      "Exceptional service with timely delivery.",
+      "Highly professional and supportive team.",
+      "The results exceeded expectations!",
+      "Responsive communication and expert quality.",
+      "Great experience from start to finish.",
+      "Impressive turnaround and attention to detail.",
+      "The best decision I've made this year.",
+      "Remarkably efficient and courteous.",
+      "I would gladly recommend them to anyone.",
+      "Delivered precisely what was promised."
+    ];
+
+    const sampleNames = [
+      "John Doe", "Emily Carter", "Michael Smith", "Sarah Johnson", "David Lee",
+      "Sophia Walker", "James Brown", "Olivia Harris", "Daniel Lewis", "Ava Turner"
+    ];
+
+    const avatarURLs = [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg",
+      "https://randomuser.me/api/portraits/men/3.jpg",
+      "https://randomuser.me/api/portraits/women/4.jpg",
+      "https://randomuser.me/api/portraits/men/5.jpg",
+      "https://randomuser.me/api/portraits/women/6.jpg",
+      "https://randomuser.me/api/portraits/men/7.jpg",
+      "https://randomuser.me/api/portraits/women/8.jpg",
+      "https://randomuser.me/api/portraits/men/9.jpg",
+      "https://randomuser.me/api/portraits/women/10.jpg"
+    ];
+
+    for (let i = 0; i < 50; i++) {
+      const comment = sampleComments[i % sampleComments.length];
+      const author = sampleNames[i % sampleNames.length];
+      const avatar = avatarURLs[i % avatarURLs.length];
+
+      const testimonialHTML = `
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card testimonial-card h-100">
+            <div class="card-body">
+              <p class="testimonial-content">"${comment}"</p>
+              <div class="author-info">
+                <img src="${avatar}" alt="Client avatar" class="avatar">
+                <div>
+                  <p class="testimonial-author">${author}</p>
+                  <small class="text-muted">Client #${i + 1}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      testimonialContainer.innerHTML += testimonialHTML;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
