@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- https://developers.google.com/speed/libraries#jquery -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: none; /* Initially hidden */
+        }
+        #show, #hide, #toggle {
+            margin: 10px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: solid 1px #0056b3;
+        }
+    </style>
+
+    <script>
+
+        $(document).ready(function() {
+           
+            // show button
+            $("#show").click(function() {
+                $("#box1").show();
+            });
+
+            // hide button
+            $("#hide").click(function() {
+                $("#box1").hide();
+            });
+
+            // toggle button
+            $("#toggle").click(function() {
+                $("#box1").toggle();
+            });
+
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+    
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+    <button id="toggle">toggle</button>
+
+    <div class="box" id="box1">
+
+    </div>
+
+</body>
+</html>
