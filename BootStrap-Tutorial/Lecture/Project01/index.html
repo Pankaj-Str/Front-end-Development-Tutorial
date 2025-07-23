@@ -38,7 +38,7 @@
         </li>
       </ul>
     </div>   
-          <a class="nav-link  text-center m-2" aria-current="page" href="#">
+          <a class="nav-link  text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
             <i class="bi bi-person-circle text_theme_color fs-1"></i>
           </a>
    
@@ -46,6 +46,44 @@
   </div>
 </nav>
 <hr class="line_design">
+
+
+<!-- create a modal for login and registration -->
+
+<div class="modal" id="login">
+  <div class="modal-dialog ">
+    <div class="modal-content bg-dark border border-2 border-warning text-white">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="m-2">
+          <label class="form-label">Email</label>
+          <input type="email" placeholder="Enter Your Email...." class="form-control">
+        </div>
+        <div class="m-2">
+          <label class="form-label">Password</label>
+          <input type="password" placeholder="Enter password ..." class="form-control">
+        </div>
+
+      </div>
+
+      <div class="modal-footer" >
+        <button class="btn btn-light">Login</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- end modal code  -->
+
+
 
 <div class="container">
   <div class="row">
