@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table with JavaScript</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Generated Table</h2>
+<div id="tableContainer"></div>
+
+<script>
+  // Set number of rows and columns
+  const rows = 5;
+  const cols = 3;
+
+  // Create table element
+  const table = document.createElement("table");
+
+  // Use nested loops to create rows and columns
+  for (let i = 0; i < rows; i++) {
+    const tr = document.createElement("tr"); // create row
+
+    for (let j = 0; j < cols; j++) {
+      const td = document.createElement("td"); // create cell
+      //td.textContent = `Row ${i + 1} Col ${j + 1}`;
+      tr.appendChild(td); // append cell to row
+    }
+
+    table.appendChild(tr); // append row to table
+  }
+
+  // Append the complete table to the container div
+  document.getElementById("tableContainer").appendChild(table);
+</script>
+
+</body>
+</html>
