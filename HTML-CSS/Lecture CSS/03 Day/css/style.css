@@ -146,3 +146,39 @@ a{
 .product_image{
     padding: 10px;
 }
+
+/* about us section css */
+
+.about_us_section{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    border: solid 1px #ffffff;
+}
+
+.about_section_header{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    border: solid 1px #ffffff;
+    text-align: center;
+    color: #F3DB70;
+    background-image: url(../image/kids-playing-toys-bg.jpeg);
+    background-position: left;
+    /* opacity: 0.8; */
+}
+.marquee_text{
+    font-size: 50px;
+    color: #0e0101;
+    padding-top: 10px;
+}
+.about_us_marquee{
+    
+    background-color: #ffffff;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: #0e0101;
+    font-size: 30px;
+
+}
