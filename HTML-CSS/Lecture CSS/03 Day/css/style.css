@@ -182,3 +182,93 @@ a{
     font-size: 30px;
 
 }
+
+/* contact us page css */
+
+.contact_us_section{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    border: solid 0px #ffffff;
+    padding-bottom: 50px;
+}
+
+.contact_left_side{
+    width: 586px;
+    height: auto;
+    float: left;
+    border: solid 0px #ffffff;
+    color: #ffffff;
+    padding-top: 50px;
+}
+.contact_right_side{
+    width: 600px;
+    height: auto;
+    float: left;
+    border: solid 0px #ffffff;
+    color: #ffffff;
+    padding-top: 50px;
+
+}
+.select_option{
+    width: 470px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 3px #F3DB70;
+    padding-left: 10px;
+    background: #0e0101;
+    margin: 10px;
+    color: #ffffff;
+}
+.input_section{
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 3px #F3DB70;
+    padding-left: 10px;
+    background: #0e0101;
+    margin: 10px;
+    color: #ffffff;
+}
+label{
+    font-size: 20px;
+    color: #F3DB70;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+}
+textarea{
+    width: 440px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 3px #F3DB70;
+    padding-left: 10px;
+    background: #0e0101;
+    margin: 10px;
+    color: #ffffff;
+    padding: 10px;
+}
+.submit_button{
+    width: 150px;
+    height: 50px;
+    background-color: #E74444;
+    color: #F3DB70;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.reset_button{
+    width: 150px;
+    height: 50px;
+    background-color: #E74444;
+    color: #F3DB70;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+}
