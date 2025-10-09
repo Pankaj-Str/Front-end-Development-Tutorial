@@ -86,11 +86,62 @@
 
               <button class="btn_bg ps-4 pe-4 pt-2 pb-2 fs-6">View More</button>
 
-              <button class="btn_bg ps-4 pe-4 pt-2 pb-2 fs-6 ">Join Now !</button>
+              <button class="btn_bg ps-4 pe-4 pt-2 pb-2 fs-6" data-bs-toggle="modal" data-bs-target="#Demo">Book Demo !</button>
 
             </div>
         </div>
     </div>
+
+<!-- create a book demo modal -->
+
+
+<div class="modal" id="Demo">
+  
+    <div class="modal-dialog border border-2 border-light rounded-3">
+        <div class="modal-content">
+            <div class="modal-header bg-black">
+              <h3 class="modal-title text-white">Book Demo Now ! </h3>
+                 <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body btn_bg">
+
+              <form>
+              <div class="mb-3">
+                <label  class="form-label">Email address</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Mobile Number</label>
+                <input type="email" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">Course</label>
+                <select class="form-control"> 
+                  <option selected>Select Course</option>
+                  <option>Java</option>
+                  <option>C++</option>
+                  <option>Python</option>
+                </select>
+
+              </div>
+              
+            </form>
+
+            </div>
+
+            <div class="modal-footer bg-black">
+                <button class="btn btn-light">Submit</button>
+            </div>
+        </div> 
+
+    </div>
+
+</div>
+
+
+
 
 
 
