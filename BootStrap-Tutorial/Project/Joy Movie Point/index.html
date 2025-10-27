@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark">
+
+<nav class="navbar navbar-expand-lg bg-black">
+
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">
+        <img src="img/movie.png" height="50" width="50">
+       <span class="fs-3">
+        &nbsp;
+            Joy Movie Point
+       </span>   
+    </a>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link bg-white rounded-pill ps-4 pe-4 border border-3 border-warning m-2 text-center" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-white rounded-pill ps-4 pe-4 border border-3 border-warning m-2 text-center" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-white rounded-pill ps-4 pe-4 border border-3 border-warning m-2 text-center" aria-current="page" href="#">Contact US</a>
+        </li>
+  <li class="nav-item"></li>
+      <div class="dropdown">
+       
+          <a class="nav-link bg-white rounded-pill ps-4 pe-4 border border-3 border-warning m-2 text-center dropdown-toggle" data-bs-toggle="dropdown" href="#">Type of Movie</a>
+        
+
+        <ul class="dropdown-menu bg-transparent">
+          <li><a class="dropdown-item bg-white rounded-pill ps-4 pe-4 border border-3 border-warning  m-1 text-center" href="#">Action</a></li>
+          <li><a class="dropdown-item bg-white rounded-pill ps-4 pe-4 border border-3 border-warning m-1 text-center" href="#">Another action</a></li>
+          <li><a class="dropdown-item bg-white rounded-pill ps-4 pe-4 border border-3 border-warning m-1 text-center" href="#">Something else here</a></li>
+      </ul>
+
+      </div>
+        
+   </li>   
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+
+
+ <!-- add slider start  -->
+
+  <div id="carouselExample" class="carousel slide mt-5 border border-1 border-light container">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/991.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/990.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/992.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <!-- <span class="visually-hidden">Previous</span> -->
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <!-- <span class="visually-hidden">Next</span> -->
+  </button>
+</div>
+
+
+ <!-- add slider end  -->
+
+
+<!-- start center section  -->
+
+
+  <div class="container mt-5 mb-5">
+
+    <div class="row">
+
+      <div class="col-sm-4  p-3">
+
+          <img src="img/01.png" class="img-fluid">
+
+      </div>
+
+      <div class="col-sm-8 text-white">
+
+        <h1>Joy Movie <span><i class="bi bi-camera-reels"></i></span> Point</h1>
+        <h3 class="text-warning">
+          Kantara: A Legend Chapter-1
+        </h3>
+        <p>
+          Kantara Chapter 1 Review: Rishab Shetty’s Kantara (2022) was an underdog whose growl proved so mighty that it secured multiple National Award wins and a glaringly positive box office response. But the odds of hitting the jackpot twice in a row are slim to none. Yet, Kantara: Chapter 1 is an earnest attempt to recreate the cinematic ‘aha’ moment we once witnessed.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, incidunt necessitatibus nisi aut
+        </p>
+          <figure>
+          <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+
+
+        <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#data">View More</button>
+
+
+      </div>
+
+    </div>
+
+  </div>      
+
+<!-- offcanvas code start  -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="data">
+    <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore veniam deleniti est tempore rerum, maxime optio officiis. Veniam tempore ipsum, reprehenderit numquam eius provident cupiditate illo eum aliquid? Eaque, est.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi assumenda minima deserunt. Distinctio ipsum debitis illum dignissimos magni voluptates quibusdam consectetur a sint? Aliquid, quas soluta! Non unde quos esse!
+      </p>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- end center section -->
+
+<hr style="height: 2px; background-color: antiquewhite;">
+
+  <!-- start movie section  -->
+
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+          <div class="col-sm-3 text-white p-3">
+
+            <div class="card bg-black border border-1 border-light bg-black p-2">
+
+              <div class="card-header">
+                <img src="img/02.png" class="img-fluid">
+              </div>
+              <div class="card-body">
+                  <h3 class="card-title text-warning">Movie 1.2</h3>
+                    <p class="card-text text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#movie1"><i class="bi bi-play-fill"></i>Watch Now</button>
+              </div>
+
+            </div>
+
+
+          </div>
+
+<!-- movie 1 modal start  -->
+
+<div class="modal modal-lg" id="movie1">
+
+  <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+          <h4>Welcome to Joy Moview Point</h4>
+            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+         </div>
+
+         <div class="modal-body">
+            <iframe width="770" height="480" src="https://www.youtube.com/embed/P9eP67jBqEo" title="TOM VE JERRY | Renkli Kovalamaca | #YENİ Çizgi Film | @cartoonnetworkturkiye" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+
+      </div>
+  </div>
+  
+</div>
+
+
+           <div class="col-sm-3 text-white p-3">
+
+            <div class="card bg-black border border-1 border-light bg-black p-2">
+
+              <div class="card-header">
+                <img src="img/06.png" class="img-fluid">
+              </div>
+              <div class="card-body">
+                  <h3 class="card-title text-warning">Movie 1.2</h3>
+                    <p class="card-text text-white">
+                      Lorem ipsum dolor sit. 
+                    </p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-warning"><i class="bi bi-play-fill"></i>Watch Now</button>
+              </div>
+
+            </div>
+
+
+          </div>
+           <div class="col-sm-3 text-white p-3">
+
+            <div class="card bg-black border border-1 border-light bg-black p-2">
+
+              <div class="card-header">
+                <img src="img/04.png" class="img-fluid">
+              </div>
+              <div class="card-body">
+                  <h3 class="card-title text-warning">Movie 1.2</h3>
+                    <p class="card-text text-white">
+                      Lorem ipsum do Lorem ipsum dlor sit amet consectetur adipisicing elit.
+                     
+                    </p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-warning"><i class="bi bi-play-fill"></i>Watch Now</button>
+              </div>
+
+            </div>
+
+
+          </div>
+           <div class="col-sm-3 text-white p-3 ">
+
+            <div class="card bg-black border border-1 border-light bg-black p-2">
+
+              <div class="card-header">
+                <img src="img/03.png" class="img-fluid">
+              </div>
+              <div class="card-body">
+                  <h3 class="card-title text-warning">Movie 1.2</h3>
+                    <p class="card-text text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-warning"><i class="bi bi-play-fill"></i>Watch Now</button>
+              </div>
+
+            </div>
+
+
+          </div>
+    </div>
+  </div>
+
+<hr>
+
+
+    <div class="container mt-5 mb-5">
+
+      <div class="row">
+          <div class="col-sm-6">
+               <!-- start accordion  -->
+
+    <div class="accordion">
+
+      <!-- start faq 1 accordion -->
+
+        <div class="accordion-item">
+          
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Accordion Item #1
+            </button>
+        </h2>
+
+        <div class="accordion-collapse collapse bg-dark text-white show" id="faq1">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus voluptas saepe delectus sunt deleniti, dicta ducimus rem voluptates sit pariatur porro cumque dolores placeat impedit recusandae nulla facilis sequi.
+              </p>
+            </div>
+        </div>
+
+        </div>
+
+      <!-- end faq 1 accordion -->
+
+      <!-- start faq 2 accordion -->
+
+        <div class="accordion-item">
+          
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Accordion Item #2
+            </button>
+        </h2>
+
+        <div class="accordion-collapse collapse bg-dark text-white" id="faq2">
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus voluptas saepe delectus sunt deleniti, dicta ducimus rem voluptates sit pariatur porro cumque dolores placeat impedit recusandae nulla facilis sequi.
+              </p>
+            </div>
+        </div>
+
+        </div>
+
+      <!-- end faq 2 accordion -->
+
+    </div>
+
+ <!-- end accordion -->
+          </div>
+          <div class="col-sm-6">
+            <div class="card shadow-lg border bg-dark p-3">
+                <div class="row">
+                  <div class="col m-2 text-warning">
+                      <label class="form-label">Email</label>
+                      <input type="text" class="form-control bg-dark">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col m-2 text-warning">
+                      <label class="form-label">Password</label>
+                      <input type="password" class="form-control bg-dark">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col m-2 text-warning">
+                      <button class="btn btn-warning">Login</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+
+</body>
+</html>
