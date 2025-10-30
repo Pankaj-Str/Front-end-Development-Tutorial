@@ -84,13 +84,55 @@
                 <li> <span><i class="bi bi-apple"></i></span> IOS Development</li>
               </ul>
 
-              <button class="btn_bg ps-4 pe-4 pt-2 pb-2 fs-6">View More</button>
+              <button class="btn_bg ps-4 pe-4 pt-2 pb-2 fs-6" data-bs-toggle="offcanvas" data-bs-target="#ViewDetail">View More</button>
 
               <button class="btn_bg ps-4 pe-4 pt-2 pb-2 fs-6" data-bs-toggle="modal" data-bs-target="#Demo">Book Demo !</button>
 
             </div>
         </div>
     </div>
+
+<!-- start off canvas detail section -->
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="ViewDetail">
+  <!-- add close button  -->
+   <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">View More </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <p>
+      Tutorials are smaller classes which allow discussion of lecture content and assignments. You can ask questions and clarify what you have studied. Workshops usually involve academic staff presenting themes or concepts related to the course.
+    </p>
+
+    <ul class="text-dark fs-5" style="list-style: none;">
+      <li><span><i class="bi bi-filetype-java"></i></span> Java Development</li>
+      <li><span><i class="bi bi-browser-edge"></i></span> Web Development</li>
+      <li> <span><i class="bi bi-apple"></i></span> IOS Development</li>
+    </ul>
+    
+
+    <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 50%">50%</div>
+</div>
+
+<div class="spinner-border" role="status">
+  <h1>welcome</h1>
+</div>
+<button type="button" class="btn btn-primary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    99+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+  </div>
+
+</div>
+
+<!-- end off canvas detail section -->
+
 
 <!-- create a book demo modal -->
 
