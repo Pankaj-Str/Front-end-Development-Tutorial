@@ -1,0 +1,91 @@
+.header_outer {
+    background-color: rgb(255, 255, 255);
+    border: solid 0px black;
+    height: 100px;
+    width: 1200px;
+    margin: auto;
+}
+.header_logo {
+    height: 80px;
+    width: 300px;
+    margin: 10px;
+    float: left;
+}
+.website_name{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;   
+    color: #0296f9;
+}
+.logo{
+    height: 25px;
+    width: 25px;
+    margin-right:5px;
+    margin-top: 10px;
+}
+
+.header_menu {
+    height: 100px;
+    width: 700px;
+    border: solid 0px black ;
+    float: left;
+}
+.header_menu_item{
+    list-style: none;
+    display: inline-block;
+}
+.header_menu_inner_item{
+  background-color: #0296f9;
+  float: left;
+  border: solid 2px rgb(221, 218, 218);
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.header_menu_inner_item a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.header_login{
+    height: 100px;
+    width: 170px;
+    float: left;
+}
+.login_btn{
+    background-color: #0296f9;
+  float: left;
+  border: solid 3px rgb(192, 192, 192);
+  
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  color: white;
+  border-start-start-radius:15px;
+  border-end-start-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 28px;
+}
+.signup_btn{
+    background-color: #0296f9;
+  float: left;
+  border: solid 3px rgb(202, 202, 202);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-start-end-radius: 15px;
+  border-end-end-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 28px;
+
+}

@@ -1,0 +1,21 @@
+table{
+    margin: auto;
+    border: solid 10px rgb(71, 70, 70);
+}
+tr{
+    background-color: antiquewhite;
+}
+.black_box{
+    background-color: rgb(175, 172, 172);
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    text-align: center;
+}
+.white_box{
+    background-color: rgb(254, 254, 254);
+    height: 70px;
+    width: 70px; 
+    font-size: 50px;
+    text-align: center;
+}
