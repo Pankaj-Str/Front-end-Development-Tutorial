@@ -56,7 +56,7 @@
         </ul>
        
         </div>
-         <span class="nav-btn text-white">
+         <span class="nav-btn text-white" data-bs-toggle="modal" data-bs-target="#login">
             <span class="fs-4"> Login &nbsp; <i class="bi bi-person-circle"></i> </span>    
         </span>
     </div>
@@ -64,6 +64,50 @@
 
 
     <!-- heder section end -->
+
+
+    <!-- Start model section  -->
+
+    <div class="modal" id="login">
+        <div class="modal-dialog border border-5 border-secondary rounded-4">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login !</h1>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-dark">Login</button>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end model section -->
+
 
 
     <!-- start center section  -->
