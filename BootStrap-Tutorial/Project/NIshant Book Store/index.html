@@ -130,9 +130,52 @@
                         Someone famous in <cite title="Source Title">Source Title</cite>
                     </figcaption>
                 </figure>
-                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#read_more">View Top Product</button>
         </div>
     </div>
+
+    <!-- start off canvas code  -->
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="read_more">
+
+            <div class="offcanvas-header bg-dark text-white">
+                <h5 class="offcanvas-title">Offcanvas</h5>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                        <div class="row">
+                            <div class="col p-3">
+                                    <div class="card p-4">
+                                      <img src="img/book.png" class="img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-3">
+                                    <div class="card p-4">
+                                      <img src="img/book.png" class="img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- end off canvas codes  -->
+
+
 
     <!-- end center section  -->
 
