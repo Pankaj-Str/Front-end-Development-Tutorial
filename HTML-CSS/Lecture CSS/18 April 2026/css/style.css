@@ -47,3 +47,48 @@ h1{
     text-align: center;
     margin-top: 50px;
 }
+
+.center_box{
+    width: 1200px;
+    height: 500px;
+    border: solid 0px rgb(205, 251, 152);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.leftbox{
+    width: 400px;
+    height: 430px;
+    border-right: solid 0px rgb(205, 251, 152);
+    float: left;
+    text-align: center;
+    padding-top: 70px;
+}
+.rightbox{
+    width: 790px;
+    height: 500px;
+    float: left;
+    border: solid 0px rgb(205, 251, 152);
+    color: rgb(205, 251, 152);
+}
+.center_heading{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    color: white;
+}
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    padding: 10px;
+    color: white;
+}
+ul{
+    list-style-type: square;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+}
