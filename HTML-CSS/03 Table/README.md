@@ -1,182 +1,275 @@
-### Comprehensive Guide to HTML Table Tags and Attributes
+# HTML Table
 
-In this section, we'll explore all the main tags used to create HTML tables, along with their sub-tags and attributes. Understanding these elements will help you master the creation and customization of tables in HTML.
+## Step 1: Create a Basic HTML Page
 
-### 1. `<table>`
-
-The `<table>` tag is the container for all other table-related tags. It defines the start and end of the table.
-
-- **Attributes**:
-  - `border`: Specifies the border width of the table. For example, `<table border="1">` creates a table with a single-pixel border.
-  - `cellpadding`: Adds padding inside each table cell. Example: `<table cellpadding="5">`.
-  - `cellspacing`: Sets the space between table cells. Example: `<table cellspacing="2">`.
-
-**Example**:
 ```html
-<table border="1" cellpadding="5" cellspacing="2">
-    <!-- Other tags go here -->
-</table>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Tutorial</title>
+</head>
+<body>
+
+</body>
+</html>
 ```
 
-### 2. `<tr>`
+---
 
-The `<tr>` tag defines a table row. All table rows must be placed within the `<table>` tag.
+## Step 2: Add the `<table>` Tag
 
-- **Attributes**:
-  - `align`: Aligns the content horizontally within a row. Values: `left`, `right`, `center`. Example: `<tr align="center">`.
-  - `valign`: Aligns the content vertically within a row. Values: `top`, `middle`, `bottom`. Example: `<tr valign="top">`.
+A table starts with the `<table>` tag.
 
-**Example**:
 ```html
-<table border="1">
-    <tr align="center" valign="middle">
-        <td>Pankaj</td>
-        <td>25</td>
-        <td>Delhi</td>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table</title>
+</head>
+<body>
+
+<table>
+
+</table>
+
+</body>
+</html>
+```
+
+---
+
+## Step 3: Add a Table Row (`<tr>`)
+
+`<tr>` stands for **Table Row**.
+
+```html
+<table>
+    <tr>
+
     </tr>
 </table>
 ```
 
-### 3. `<th>`
+---
 
-The `<th>` tag is used to define header cells in a table. These are usually placed at the top of each column and are bold and centered by default.
+## Step 4: Add Table Headers (`<th>`)
 
-- **Attributes**:
-  - `colspan`: Merges a cell across multiple columns. Example: `<th colspan="2">Name</th>`.
-  - `rowspan`: Merges a cell across multiple rows. Example: `<th rowspan="2">Age</th>`.
-  - `scope`: Defines the scope of the header cell. Values: `col`, `row`, `colgroup`, `rowgroup`. Example: `<th scope="col">Name</th>`.
+`<th>` is used for column headings.
 
-**Example**:
 ```html
 <table border="1">
     <tr>
-        <th colspan="2">Name</th>
+        <th>ID</th>
+        <th>Name</th>
         <th>City</th>
     </tr>
+</table>
+```
+
+**Output**
+
+| ID | Name | City |
+| -- | ---- | ---- |
+
+---
+
+## Step 5: Add Table Data (`<td>`)
+
+`<td>` stands for **Table Data**.
+
+```html
+<table border="1">
     <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
         <td>Pankaj</td>
-        <td>25</td>
-        <td>Delhi</td>
+        <td>Indore</td>
     </tr>
 </table>
 ```
 
-### 4. `<td>`
+**Output**
 
-The `<td>` tag is used to define standard data cells in a table, which hold the actual content.
+| ID | Name   | City   |
+| -- | ------ | ------ |
+| 1  | Pankaj | Indore |
 
-- **Attributes**:
-  - `colspan`: Merges a cell across multiple columns. Example: `<td colspan="2">Pankaj</td>`.
-  - `rowspan`: Merges a cell across multiple rows. Example: `<td rowspan="2">Delhi</td>`.
-  - `align`: Aligns the content horizontally within a cell. Values: `left`, `right`, `center`. Example: `<td align="right">25</td>`.
-  - `valign`: Aligns the content vertically within a cell. Values: `top`, `middle`, `bottom`. Example: `<td valign="top">25</td>`.
+---
 
-**Example**:
+## Step 6: Add Multiple Rows
+
 ```html
 <table border="1">
     <tr>
-        <td rowspan="2">Pankaj</td>
-        <td>25</td>
-        <td>Delhi</td>
+        <th>ID</th>
+        <th>Name</th>
+        <th>City</th>
     </tr>
+
     <tr>
-        <td>26</td>
+        <td>1</td>
+        <td>Pankaj</td>
+        <td>Indore</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Aman</td>
+        <td>Bhopal</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Riya</td>
         <td>Mumbai</td>
     </tr>
 </table>
 ```
 
-### 5. `<caption>`
+---
 
-The `<caption>` tag is used to add a title or description to the table, which appears above the table by default.
+## Step 7: Add a Table Caption
 
-- **Attributes**:
-  - `align`: Aligns the caption. Values: `top`, `bottom`, `left`, `right`. Example: `<caption align="bottom">Student Details</caption>`.
+Use `<caption>` to give the table a title.
 
-**Example**:
 ```html
 <table border="1">
-    <caption>Student Details</caption>
+
+    <caption>Student Information</caption>
+
     <tr>
+        <th>ID</th>
         <th>Name</th>
-        <th>Age</th>
         <th>City</th>
     </tr>
+
     <tr>
+        <td>1</td>
         <td>Pankaj</td>
-        <td>25</td>
-        <td>Delhi</td>
+        <td>Indore</td>
     </tr>
+
 </table>
 ```
 
-### 6. `<thead>`, `<tbody>`, and `<tfoot>`
+---
 
-These tags are used to group different sections of the table.
+## Step 8: Merge Columns (`colspan`)
 
-- **`<thead>`**: Contains the header rows of the table.
-- **`<tbody>`**: Contains the main content rows of the table.
-- **`<tfoot>`**: Contains the footer rows of the table.
-
-**Example**:
 ```html
 <table border="1">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Pankaj</td>
-            <td>25</td>
-            <td>Delhi</td>
-        </tr>
-        <tr>
-            <td>Anjali</td>
-            <td>22</td>
-            <td>Mumbai</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3">Total Students: 2</td>
-        </tr>
-    </tfoot>
-</table>
-```
 
-### 7. `<col>` and `<colgroup>`
-
-These tags are used to define and group columns, allowing you to apply styles or attributes to entire columns.
-
-- **`<colgroup>`**: Groups one or more columns.
-- **`<col>`**: Defines an individual column.
-
-**Example**:
-```html
-<table border="1">
-    <colgroup>
-        <col span="2" style="background-color:lightgrey">
-        <col style="background-color:lightblue">
-    </colgroup>
     <tr>
+        <th colspan="3">Student Information</th>
+    </tr>
+
+    <tr>
+        <th>ID</th>
         <th>Name</th>
-        <th>Age</th>
         <th>City</th>
     </tr>
+
     <tr>
+        <td>1</td>
         <td>Pankaj</td>
-        <td>25</td>
-        <td>Delhi</td>
+        <td>Indore</td>
     </tr>
+
 </table>
 ```
 
-### Conclusion
+---
 
-Understanding the various tags and attributes of HTML tables allows you to create structured and well-organized tables for displaying data. Each tag and attribute has a specific role in defining how the table is presented, giving you full control over the layout and structure of your data. 
+## Step 9: Merge Rows (`rowspan`)
 
-Practice using these tags in your projects to get comfortable with creating and customizing HTML tables!
+```html
+<table border="1">
+
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Pankaj</td>
+        <td>HTML</td>
+    </tr>
+
+    <tr>
+        <td>Python</td>
+    </tr>
+
+</table>
+```
+
+---
+
+## Step 10: Complete Example
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Example</title>
+</head>
+<body>
+
+<h2>Student Details</h2>
+
+<table border="1">
+
+    <caption>Student Information</caption>
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Pankaj</td>
+        <td>HTML</td>
+        <td>Indore</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Rahul</td>
+        <td>Python</td>
+        <td>Bhopal</td>
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>Priya</td>
+        <td>Java</td>
+        <td>Delhi</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+```
+
+## HTML Table Tags Summary
+
+| Tag          | Description                     |
+| ------------ | ------------------------------- |
+| `<table>`    | Creates a table                 |
+| `<tr>`       | Creates a table row             |
+| `<th>`       | Creates a header cell           |
+| `<td>`       | Creates a data cell             |
+| `<caption>`  | Adds a title to the table       |
+| `border="1"` | Displays a visible table border |
+| `colspan`    | Merges multiple columns         |
+| `rowspan`    | Merges multiple rows            |
+
+
