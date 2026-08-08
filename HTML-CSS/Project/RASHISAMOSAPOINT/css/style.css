@@ -1,0 +1,151 @@
+.header{
+    height: 100px;
+    width: 1200px;
+    /* background-color: aqua; */
+    margin: auto;
+    border-bottom: solid 4px black;
+}
+.logo_section{
+    height: 100px;
+    width: 100px;
+    border: solid 0px black;
+    text-align: center;
+    float: left;
+}
+.shop_name{
+    height: 100px;
+    width: 280px;
+    border: solid 0px black;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+.menu_section{
+    height: 100px;
+    width: 800px;
+    border: solid 0px black;
+    float: left;
+}
+.main_menu{
+    list-style: none;
+}
+.menu_items{
+    border: solid 2px black;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.menu_login{
+     border: solid 1px rgb(250, 250, 250);
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.menu_signup{
+    border: solid 1px rgb(252, 250, 250);
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 5px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+/* center section  */
+.center_section_outer{
+    height: 300px;
+    width: 1200px;
+    /* background-color: antiquewhite; */
+    border: solid 0px black;
+    margin: auto;
+    border-bottom: 5px solid black;
+}
+
+.left_center_section{
+
+    height: 300px;
+    width: 396px;
+    border: solid 0px black;
+    float: left;
+    text-align: center;
+
+}
+.right_center_section{
+    height: 300px;
+    width: 800px;
+    border: solid 0px black;
+    float: left;
+}
+
+.right_center_section_t1{
+    height: 50px;
+    width: 800px;
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+.right_center_section_text1{
+    height: 50px;
+    width: 100px;
+    /* background-color: rgb(217, 147, 56); */
+    float: left;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.right_center_section_text2{
+    height: 45px;
+    width: 50px;
+    /* background-color: rgb(217, 147, 56); */
+     float: left;
+     text-align: left;
+     padding-top: 2px;
+     padding-left: 32px;
+}
+.right_center_section_text3{
+    height: 50px;
+    width: 450px;
+    /* background-color: rgb(217, 147, 56); */
+    float: left;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right_center_section_p{
+    border-left: solid 10px black;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.right_center_section_btn{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px rgb(255, 162, 0) solid;
+    border-top: 3px rgb(255, 162, 0) solid;
+    border-right: 3px rgb(255, 162, 0) solid;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
