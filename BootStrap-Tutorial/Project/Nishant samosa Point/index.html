@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     
@@ -34,9 +35,49 @@
         </li>
         
       </ul>
+     
     </div>
+    
+       
+          <a class="nav-link active nav-item bg-warning border border-1 shadow-lg bg-white rounded-pill ps-3 pt-2 pb-2 pe-3 text-center m-1" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login"> <i class="bi bi-person-fill"></i> Login</a>
+        
+      
   </div>
 </nav>
+
+<!-- start modal codes  -->
+
+<div id="login" class="modal">
+
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+             <div class="modal-header">
+              <h1 class="modal-title fs-5">Login !</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Modal body content goes here -->
+
+        <div class="m-2">
+          <label class="form-label">Email</label>
+          <input type="text" class="form-control" placeholder="Nishant@codeswithpankaj.com">
+        </div>
+        <div class="m-2">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" placeholder="ZXCV!$@#$$%6">
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+
+       </div> 
+    </div>
+
+</div>
+
 
 </body>
 </html>
