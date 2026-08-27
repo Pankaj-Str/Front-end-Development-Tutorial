@@ -202,3 +202,62 @@
     font-size: 15px;
 
 }
+
+/* contact us section  */
+.ceter_contact_heading{
+    text-align: center;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: rgb(41, 42, 42);
+}
+
+.contact_center_section_outer{
+    width: 1200px;
+    height: 520px;
+    /* border: solid 1px black;
+    background-color: antiquewhite; */
+    margin: auto;
+    
+}
+.contact_left{
+    /* border: solid 1px black; */
+    height: 520px;
+    width: 496px;
+    /* background-color: aqua; */
+    float: left;
+}
+.contact_right{
+    /* border: solid 1px black; */
+    height: 480px;
+    width: 660px;
+    /* background-color: blueviolet; */
+    float: left;
+    padding: 20px;
+}
+.text_legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+input{
+    width: 510px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: solid 2px black;
+    font-size: 20px;
+}
+textarea{
+    width: 510px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: solid 2px black;
+    font-size: 20px;
+}
