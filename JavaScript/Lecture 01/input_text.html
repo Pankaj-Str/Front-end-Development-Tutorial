@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script>
+
+        function add(){
+            n1 = document.getElementById("number1").value;
+            n2 = document.getElementById("number2").value;
+
+            result = +n1 + +n2;
+
+            document.getElementById("output").innerHTML = result;
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 shadow-lg border p-3">
+                    <label class="form-label">Number1</label>
+                    <input type="text" class="form-control" id="number1">
+                    <label class="form-label">Number2</label>
+                    <input type="text" class="form-control" id="number2">
+                    <br>
+                    <button class="btn btn-primary" onclick="add()">Add</button>
+                    <hr>
+                    <div class="alert alert-primary" role="alert">
+                        <span id="output"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>
