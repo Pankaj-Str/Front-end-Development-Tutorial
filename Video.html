@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codes With Pankaj - Videos</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0b0b0f;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .video-grid {
+      width: 100%;
+      max-width: 1400px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .video {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #15151c;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+
+      .video-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="video-grid">
+
+    <!-- Video 1 -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/Zue3so29wJQ?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="YouTube Video 1"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/QeWtxb4ouK0?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="YouTube Video 2"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/atDwP4S0cv0?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="YouTube Video 3"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/XCWJ6dpDv_A?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="YouTube Video 4"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>
