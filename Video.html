@@ -1,108 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codes With Pankaj - Videos</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #0b0b0f;
-      font-family: Arial, sans-serif;
-      padding: 30px;
-    }
-
-    .video-grid {
-      width: 100%;
-      max-width: 1400px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-
-    .video {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border-radius: 14px;
-      background: #15151c;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    }
-
-    .video iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 15px;
-      }
-
-      .video-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Codes With Pankaj — Learn coding, Python, Pandas, Machine Learning and Data Science through practical video tutorials.">
+<title>Codes With Pankaj | Video Tutorials</title>
+<style>
+:root{--bg:#f7f8fc;--surface:#fff;--text:#111827;--muted:#667085;--line:#e8eaf0;--accent:#6d28d9;--accent2:#8b5cf6;--shadow:0 16px 45px rgba(16,24,40,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,234,240,.8)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px}.logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 8px 20px rgba(109,40,217,.25)}.brand span{font-size:18px}.navlinks{display:flex;gap:25px;color:#596275;font-size:14px;font-weight:600}.navlinks a:hover{color:var(--accent)}.cta{padding:11px 16px;border-radius:10px;background:#111827;color:#fff;font-size:14px;font-weight:700}.cta:hover{background:#262d3b}
+.hero{padding:82px 0 54px;background:radial-gradient(circle at 82% 10%,rgba(139,92,246,.16),transparent 31%),linear-gradient(180deg,#fff 0%,#f7f8fc 100%)}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:#f0eafd;color:#5b21b6;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-3px;margin:20px 0 22px;max-width:760px}.gradient{background:linear-gradient(90deg,#111827,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:670px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.primary{background:var(--accent);color:#fff;padding:14px 19px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(109,40,217,.22)}.secondary{background:#fff;border:1px solid var(--line);padding:14px 19px;border-radius:12px;font-weight:800}.hero-card{background:#111827;border-radius:28px;padding:25px;color:#fff;box-shadow:0 25px 70px rgba(17,24,39,.18);transform:rotate(1.2deg)}.hero-card .mini{font-size:12px;color:#aab2c0;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.hero-card h3{font-size:27px;line-height:1.15;margin:12px 0 22px}.progress{height:7px;background:#303846;border-radius:999px;overflow:hidden}.progress i{display:block;width:72%;height:100%;background:linear-gradient(90deg,#8b5cf6,#c4b5fd);border-radius:999px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:23px}.stat{padding:12px;border:1px solid #2d3542;border-radius:13px}.stat b{display:block;font-size:18px}.stat span{font-size:11px;color:#9ca5b4}
+.section{padding:72px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.section-head h2{font-size:34px;letter-spacing:-1.3px;margin:0}.section-head p{color:var(--muted);margin:7px 0 0}.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.video-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 5px 20px rgba(16,24,40,.04);transition:.25s ease}.video-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.video-wrap{position:relative;aspect-ratio:16/9;background:#0b0f17}.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video-info{padding:18px 19px 20px}.tag{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:.08em;text-transform:uppercase}.video-info h3{font-size:19px;margin:7px 0 6px;letter-spacing:-.4px}.video-info p{color:var(--muted);font-size:14px;margin:0;line-height:1.55}.about{background:#111827;color:#fff;border-radius:28px;padding:48px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px}.about h2{font-size:38px;letter-spacing:-1.5px;margin:0 0 12px}.about p{color:#aeb7c5;line-height:1.7;margin:0}.features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.feature{border:1px solid #303846;border-radius:15px;padding:17px}.feature b{display:block;margin-bottom:5px}.feature span{font-size:13px;color:#9da7b6;line-height:1.45}
+footer{padding:32px 0 45px;color:#737d8e;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:24px}.footer-row b{color:#374151}.mobile-menu{display:none}
+@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.hero-card{transform:none}.videos{grid-template-columns:1fr}.navlinks{display:none}.mobile-menu{display:block;border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px}.hero{padding-top:55px}h1{letter-spacing:-2px}.section{padding:55px 0}.about{padding:30px}.footer-row{flex-direction:column}}
+@media(max-width:520px){.container{width:min(100% - 24px,1180px)}.nav{height:64px}.brand span{font-size:16px}.cta{display:none}.hero p{font-size:16px}.stats{grid-template-columns:1fr}.section-head{display:block}.section-head h2{font-size:29px}.about h2{font-size:30px}.features{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
-
-  <div class="video-grid">
-
-    <!-- Video 1 -->
-    <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/Zue3so29wJQ?autoplay=1&mute=1&playsinline=1&rel=0"
-        title="YouTube Video 1"
-        allow="autoplay; encrypted-media; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- Video 2 -->
-    <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/QeWtxb4ouK0?autoplay=1&mute=1&playsinline=1&rel=0"
-        title="YouTube Video 2"
-        allow="autoplay; encrypted-media; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- Video 3 -->
-    <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/atDwP4S0cv0?autoplay=1&mute=1&playsinline=1&rel=0"
-        title="YouTube Video 3"
-        allow="autoplay; encrypted-media; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- Video 4 -->
-    <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/XCWJ6dpDv_A?autoplay=1&mute=1&playsinline=1&rel=0"
-        title="YouTube Video 4"
-        allow="autoplay; encrypted-media; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-  </div>
-
-</body>
-</html>
+<header><div class="container nav"><a class="brand" href="#top"><div class="logo">CWP</div><span>Codes With Pankaj</span></a><nav class="navlinks"><a href="#videos">Videos</a><a href="#about">About</a><a href="https://codeswithpankaj.com/" target="_blank" rel="noopener">Website</a></nav><a class="cta" href="https://www.youtube.com/@codeswithpankaj.official" target="_blank" rel="noopener">YouTube Channel</a><button class="mobile-menu" aria-label="Menu">☰</button></div></header>
+<main id="top">
+<section class="hero"><div class="container hero-grid"><div><div class="eyebrow"><span class="dot"></span> Learn • Build • Grow</div><h1>Learn to Code.<br><span class="gradient">Build Real Projects.</span></h1><p>Practical programming, Python, Pandas, Machine Learning and Data Science tutorials by Codes With Pankaj — explained clearly, step by step.</p><div class="hero-actions"><a class="primary" href="#videos">Explore Tutorials ↓</a><a class="secondary" href="https://codeswithpankaj.com/" target="_blank" rel="noopener">Visit Website</a></div></div><div class="hero-card"><div class="mini">Featured learning series</div><h3>Build strong foundations with practical, hands-on tutorials.</h3><div class="progress"><i></i></div><div class="stats"><div class="stat"><b>4</b><span>Featured Videos</span></div><div class="stat"><b>100%</b><span>Practical</span></div><div class="stat"><b>Step</b><span>By Step</span></div></div></div></div></section>
+<section class="section" id="videos"><div class="container"><div class="section-head"><div><h2>Featured Tutorials</h2><p>Watch the lessons directly on this page.</p></div></div><div class="videos">
+<article class="video-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/Zue3so29wJQ" title="Codes With Pankaj tutorial 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-info"><div class="tag">Tutorial 01</div><h3>Learn Step by Step</h3><p>Practical concepts explained clearly with a focus on real learning.</p></div></article>
+<article class="video-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/QeWtxb4ouK0" title="Codes With Pankaj tutorial 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-info"><div class="tag">Tutorial 02</div><h3>Build Your Skills</h3><p>Continue learning with another practical lesson from the series.</p></div></article>
+<article class="video-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/atDwP4S0cv0" title="Codes With Pankaj tutorial 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-info"><div class="tag">Tutorial 03</div><h3>Practice With Examples</h3><p>Learn by following examples and applying concepts step by step.</p></div></article>
+<article class="video-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/XCWJ6dpDv_A" title="Codes With Pankaj tutorial 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-info"><div class="tag">Tutorial 04</div><h3>Keep Building</h3><p>Strengthen your understanding through another focused lesson.</p></div></article>
+</div></div></section>
+<section class="section" id="about"><div class="container"><div class="about"><div><h2>Learn. Build. Get Ready.</h2><p>Codes With Pankaj is focused on clear, practical and industry-oriented learning. Explore tutorials designed to help you understand concepts and turn them into real projects.</p></div><div class="features"><div class="feature"><b>Practical Learning</b><span>Concepts explained with examples you can follow.</span></div><div class="feature"><b>Programming</b><span>Build strong foundations for modern development.</span></div><div class="feature"><b>AI & Data Science</b><span>Learn Python, Pandas, ML and related technologies.</span></div><div class="feature"><b>Real Projects</b><span>Move from theory toward hands-on implementation.</span></div></div></div></div></section>
+</main>
+<footer><div class="container footer-row"><div>© 2026 <b>Codes With Pankaj</b>. All rights reserved.</div><div>www.codeswithpankaj.com</div></div></footer>
+</body></html>
