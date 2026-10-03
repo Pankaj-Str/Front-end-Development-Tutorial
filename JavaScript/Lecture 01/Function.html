@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        // basic function 
+
+        function info(){
+            console.log("welcome to codeswithpankaj.com");
+        }
+
+
+        // call the function 
+        //info();
+        //info();
+
+
+        // function with parameter 
+
+        function add(number1,number2){
+            result = number1 + number2
+            console.log(result)
+        }
+
+
+        // call this function 
+        add(1200,456);
+        add(1200,1450);
+
+
+        // return type
+
+        function get_number(){
+            return 100;
+        }
+
+        // print this values from function 
+        console.log(get_number())
+
+
+        // function with return type with parameter
+        function get_result(n1,n2){
+            result = n1+n2;
+            return result;
+        }
+
+        // print this function 
+        console.log(get_result(45,89))
+        console.log(get_result(450,89))
+
+        document.write(get_result(450,56))
+
+
+    </script>
+
+
+
+</head>
+<body>
+
+    <button onclick="info()">Call basic Function</button>
+
+
+</body>
+</html>
