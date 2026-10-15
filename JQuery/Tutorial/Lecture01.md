@@ -496,36 +496,4 @@ The animation methods queue their effects in order. The `css()` change is applie
 | Callback                    | Run code after an effect finishes |
 | Chaining                    | Combine multiple methods          |
 
-## 11. Practice exercises
-
-Try these exercises yourself to strengthen your understanding.
-
-Practice checklist
-
-0 of 6 completed
-
-Hide and Show
-
-Create a paragraph with Hide, Show, and Toggle buttons.
-
-Fade Effects
-
-Create three boxes and apply fadeIn(), fadeOut(), and fadeTo().
-
-Slide Panel
-
-Build a FAQ panel that opens and closes using slideToggle().
-
-Custom Animation
-
-Move a box 300px to the right and increase its width.
-
-Stop Animation
-
-Add Start and Stop buttons for a five-second animation.
-
-Callback and Chaining
-
-Display an alert after an animation and chain three effects.
-
-Next step: Run each example in your browser, change the animation durations, and experiment with different HTML elements. Once you understand these seven effects, you'll be ready to use jQuery effects in interactive websites and projects.
+----
