@@ -4,43 +4,35 @@ jQuery effects help you create interactive web pages by showing, hiding, fading,
 
 ## 1. Topics covered
 
-[Show and Hidden Icon for application, web site, user interface design.](https://images.openai.com/static-rsc-4/1Myg3nmNxIlKHdXUll4C-aA_YA_pZg_eTjNXge1Pp7ofdLSVw4B4WOYfmP0Ee9x8tElu4M2SHJFqLDFmqSIXvYNlpu4-xn0io5PrD4Lf2ki86tIfOqevwfg9Y0LVcOGDi12MsdCPS_xwCp3dy1PmSkznlJV4CfPM3Vt-U4WtpbT1bcMzC_PRq0jSVNNWjj_w?purpose=inline)
-
 1\. jQuery Hide/Show
 
 Hide and display HTML elements using `hide()`, `show()`, and `toggle()`.
 
-[How To Add & Edit Text Mask | Wix Studio](https://images.openai.com/static-rsc-4/xcAnyJeRQfqmFDCzk3gPg-m1ruTs57imlu-Ih9iVMpye-cbySl_e6_lNZ7VXEPX9QK0M4_1OSQNNx6EwEh9xU9YO_zbpxYctZUHya0lDyvWJxJZ87YQZ5CDql1QjSxzs2JLVL2GjYP5j8gi93PUkcre1--VoCE7stxxIwuxIb-M?purpose=inline)
 
 2\. jQuery Fade
 
 Learn `fadeIn()`, `fadeOut()`, `fadeToggle()`, and `fadeTo()`.
 
-[10 Best Scroll-triggered Animation Plugins With JavaScript (2026 Update) | jQuery Script](https://images.openai.com/static-rsc-4/XLKimoGoWmv60bwhLLIiF7sT6SgcQWUvkmBh5viPgV1l1dKHQk-CX3kyGKvcipcDu6xZYhzmmiKYNPjnWc8xJYVYhza2-5Sg7ZI6I7D2L3ldd9cHeFaof0b2WQ-RngtmYUX7QQsvRue7FpzhCW6G0AvLF4BHFQMkxMvGpPjV4gM?purpose=inline)
 
 3\. jQuery Slide
 
 Use `slideDown()`, `slideUp()`, and `slideToggle()`.
 
-[Sliding Shapes | Stage 4 Lesson | Coding Ireland](https://images.openai.com/static-rsc-4/2KuY8YjMZWv4LyvEILzCCMW6mS7qpnwXT0WhZXBTej-PumWN-l6SpgOnj6aBsCnKB84KSVLYkkSAkfGWAQaRNNYk0AzrJ5tvWCQ7qERkjzJr5DRDZwMYPQx_vBW9siAdzW94ZyuiOSzfPVaHkNvtdYSaocj2Oy9NW9TTRBKoKJ4?purpose=inline)
 
 4\. jQuery Animate
 
 Animate CSS properties with `animate()`.
 
-[Video player for web and mobile apps. Vector illustration.](https://images.openai.com/static-rsc-4/3fe0WMvX39TbxUV6AMNyk1VcWqYcv9hLwb20szhIN2Q0TrI4BKxG-ouIXC0MNUZqMzqXVje1DG3N8Zl8UFoCO7W-lEMswHOxAooRYHv3qvElasROO3LG699HkkIjN9yMQNwN7l7jrGybNvmbNloa7XY_gMl3A9brUZER5_izxAGa70H6PKyAVKshcU25F9it?purpose=inline)
 
 5\. jQuery stop()
 
 Stop an animation before it finishes.
 
-[Callback Functions](https://images.openai.com/static-rsc-4/gQhCK6qwbhVqP4d6EJTvwxZ98rNuSl-RhmIzIqtFF1uanWZLncuKzdKgMgtUbgAxUDYUenCSvV_gPYm7W8exKyX9ZvXsCYz5HR8t5H6jLxAzBsFUePThOmN5sZBKGACKr68UIqPG0w0IKl0nFAnVnDwdOfmwAG7KDw0JzEdmr_k?purpose=inline)
 
 6\. jQuery Callback
 
 Execute a function after an effect completes.
 
-[Business Infographic template with numbers 5 options or steps. Vector illustration isolated on white background.](https://images.openai.com/static-rsc-4/QPh-AuQMXDrEPuQkEdKqYLQbdJ5vyAuub7-0DXS3LM9PonF2G7dhu0EZmuv1Eks_OAF-_Mn7ymEsTf8IF9ABFN1ntaRxc9P1AN24XL1ZrptBrUQX4uDG5N7xOxu5ZHXwcDpoUhsFW6o-HujjXZyxJ2CKJ3BPx_ZIK6Yaxz8duyO-mGUeqoSg_tnH6xQq6lxK?purpose=inline)
 
 7\. jQuery Chaining
 
