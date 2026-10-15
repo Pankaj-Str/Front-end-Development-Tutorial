@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Multiple Images Using jQuery</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .flip-horizontal {
+            transform: scaleX(-1);
+        }
+
+        .flip-vertical {
+            transform: scaleY(-1);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Flip Multiple Images Using jQuery</h2>
+
+    <div class="image-container">
+        <img src="https://picsum.photos/id/1015/400/300" alt="Mountain">
+        <img src="https://picsum.photos/id/1016/400/300" alt="Nature">
+        <img src="https://picsum.photos/id/1018/400/300" alt="Landscape">
+    </div>
+
+    <button id="flipHorizontal">Flip Horizontally</button>
+    <button id="flipVertical">Flip Vertically</button>
+    <button id="resetImages">Reset Images</button>
+
+    <script>
+        $(document).ready(function () {
+
+            // Flip all images horizontally
+            $("#flipHorizontal").click(function () {
+                $(".image-container img").each(function () {
+                    $(this).toggleClass("flip-horizontal");
+                    $(this).removeClass("flip-vertical");
+                });
+            });
+
+            // Flip all images vertically
+            $("#flipVertical").click(function () {
+                $(".image-container img").each(function () {
+                    $(this).toggleClass("flip-vertical");
+                    $(this).removeClass("flip-horizontal");
+                });
+            });
+
+            // Reset all images
+            $("#resetImages").click(function () {
+                $(".image-container img")
+                    .removeClass("flip-horizontal flip-vertical");
+            });
+
+        });
+    </script>
+
+</body>
+</html>
